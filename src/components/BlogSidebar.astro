@@ -33,6 +33,40 @@ const currentId = Astro.url.pathname.split('/').filter(Boolean).pop()?.replace('
 ---
 
 <aside class="blog-sidebar">
+  <!-- 最新文章 -->
+  <div class="sidebar-section">
+    <h3>📝 最新文章</h3>
+    <ul class="recent-posts">
+      {allPosts
+        .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
+        .slice(0, 5)
+        .map(post => (
+          <li class={post.id === currentId ? 'active' : ''}>
+            <a href={`/blog/${post.id}/`}>
+              <span class="post-title">{post.data.title}</span>
+              <span class="post-date">
+                {post.data.pubDate.toLocaleDateString('zh-TW')}
+              </span>
+            </a>
+          </li>
+        ))}
+    </ul>
+  </div>
+
+  <!-- 熱門標籤 -->
+  {sortedTags.length > 0 && (
+    <div class="sidebar-section">
+      <h3>🏷️ 熱門標籤</h3>
+      <div class="tag-cloud">
+        {sortedTags.map(([tag, count]) => (
+          <a href={`/tags/${tag}/`} class="tag">
+            {tag} <span class="tag-count">{count}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  )}
+
   <!-- 分類導航 -->
   <nav class="sidebar-section">
     <h3>📂 分類</h3>
@@ -60,40 +94,6 @@ const currentId = Astro.url.pathname.split('/').filter(Boolean).pop()?.replace('
       ))}
     </ul>
   </nav>
-
-  <!-- 熱門標籤 -->
-  {sortedTags.length > 0 && (
-    <div class="sidebar-section">
-      <h3>🏷️ 熱門標籤</h3>
-      <div class="tag-cloud">
-        {sortedTags.map(([tag, count]) => (
-          <a href={`/tags/${tag}/`} class="tag">
-            {tag} <span class="tag-count">{count}</span>
-          </a>
-        ))}
-      </div>
-    </div>
-  )}
-
-  <!-- 最新文章 -->
-  <div class="sidebar-section">
-    <h3>📝 最新文章</h3>
-    <ul class="recent-posts">
-      {allPosts
-        .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-        .slice(0, 5)
-        .map(post => (
-          <li class={post.id === currentId ? 'active' : ''}>
-            <a href={`/blog/${post.id}/`}>
-              <span class="post-title">{post.data.title}</span>
-              <span class="post-date">
-                {post.data.pubDate.toLocaleDateString('zh-TW')}
-              </span>
-            </a>
-          </li>
-        ))}
-    </ul>
-  </div>
 </aside>
 
 <style>
