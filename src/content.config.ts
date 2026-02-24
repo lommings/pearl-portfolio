@@ -13,6 +13,9 @@ const blog = defineCollection({
 			pubDate: z.coerce.date(),
 			updatedDate: z.coerce.date().optional(),
 			heroImage: image().optional(),
+			// 分類和標籤
+			category: z.string().default('未分類'),
+			tags: z.array(z.string()).default([]),
 		}),
 });
 
