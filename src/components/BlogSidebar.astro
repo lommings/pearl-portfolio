@@ -28,8 +28,8 @@ const sortedTags = Object.entries(tagCounts)
   .sort((a, b) => b[1] - a[1])
   .slice(0, 10); // 只顯示前 10 個熱門標籤
 
-// 當前頁面的 slug（如果有的話）
-const currentSlug = Astro.url.pathname.split('/').pop()?.replace('.html', '');
+// 當前頁面的 ID（如果有的話）
+const currentId = Astro.url.pathname.split('/').filter(Boolean).pop()?.replace('.html', '');
 ---
 
 <aside class="blog-sidebar">
@@ -48,8 +48,8 @@ const currentSlug = Astro.url.pathname.split('/').pop()?.replace('.html', '');
               {postsByCategory[category]
                 .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
                 .map(post => (
-                  <li class={post.slug === currentSlug ? 'active' : ''}>
-                    <a href={`/blog/${post.slug}/`}>
+                  <li class={post.id === currentId ? 'active' : ''}>
+                    <a href={`/blog/${post.id}/`}>
                       {post.data.title}
                     </a>
                   </li>
@@ -83,8 +83,8 @@ const currentSlug = Astro.url.pathname.split('/').pop()?.replace('.html', '');
         .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
         .slice(0, 5)
         .map(post => (
-          <li class={post.slug === currentSlug ? 'active' : ''}>
-            <a href={`/blog/${post.slug}/`}>
+          <li class={post.id === currentId ? 'active' : ''}>
+            <a href={`/blog/${post.id}/`}>
               <span class="post-title">{post.data.title}</span>
               <span class="post-date">
                 {post.data.pubDate.toLocaleDateString('zh-TW')}
