@@ -1,0 +1,146 @@
+---
+interface Props {
+  youtube?: string;
+  bilibili?: string;
+  title: string;
+  autoSwitch?: boolean; // 是否自動切換（根據地區）
+}
+
+const { youtube, bilibili, title, autoSwitch = true } = Astro.props;
+---
+
+<div class="video-player">
+  {youtube && (
+    <div class="video-frame youtube" data-platform="youtube">
+      <iframe
+        src={`https://www.youtube.com/embed/${youtube}`}
+        title={title}
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        loading="lazy"
+      ></iframe>
+    </div>
+  )}
+  
+  {bilibili && (
+    <div class="video-frame bilibili" data-platform="bilibili">
+      <iframe
+        src={`https://player.bilibili.com/player.html?bvid=${bilibili}&high_quality=1`}
+        title={title}
+        frameborder="0"
+        scrolling="no"
+        allowfullscreen
+        loading="lazy"
+      ></iframe>
+    </div>
+  )}
+  
+  {youtube && bilibili && (
+    <div class="platform-switcher">
+      <button data-switch="youtube" class="active">YouTube</button>
+      <button data-switch="bilibili">Bilibili</button>
+    </div>
+  )}
+</div>
+
+<script define:vars={{ autoSwitch, youtube, bilibili }}>
+  if (autoSwitch && youtube && bilibili) {
+    // 簡易地區偵測（根據時區）
+    const offset = new Date().getTimezoneOffset();
+    const isChinaTime = offset === -480; // UTC+8
+    
+    const youtubeFrame = document.querySelector('[data-platform="youtube"]');
+    const biliFrame = document.querySelector('[data-platform="bilibili"]');
+    const youtubeBtn = document.querySelector('[data-switch="youtube"]');
+    const biliBtn = document.querySelector('[data-switch="bilibili"]');
+    
+    if (isChinaTime) {
+      youtubeFrame.style.display = 'none';
+      biliFrame.style.display = 'block';
+      youtubeBtn.classList.remove('active');
+      biliBtn.classList.add('active');
+    } else {
+      youtubeFrame.style.display = 'block';
+      biliFrame.style.display = 'none';
+    }
+  }
+  
+  // 手動切換按鈕
+  document.querySelectorAll('[data-switch]').forEach(btn => {
+    btn.addEventListener('click', (e) => {
+      const platform = e.target.dataset.switch;
+      document.querySelectorAll('.video-frame').forEach(frame => {
+        frame.style.display = frame.dataset.platform === platform ? 'block' : 'none';
+      });
+      
+      // 按鈕狀態
+      document.querySelectorAll('[data-switch]').forEach(b => {
+        b.classList.toggle('active', b.dataset.switch === platform);
+      });
+    });
+  });
+</script>
+
+<style>
+  .video-player {
+    margin: 2rem 0;
+  }
+  
+  .video-frame {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+    overflow: hidden;
+    border-radius: 12px;
+    background: #000;
+  }
+  
+  .video-frame iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 12px;
+  }
+  
+  .platform-switcher {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 1rem;
+    justify-content: center;
+  }
+  
+  .platform-switcher button {
+    padding: 0.5rem 1rem;
+    border: 2px solid #e5e7eb;
+    background: white;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-weight: 500;
+  }
+  
+  .platform-switcher button.active {
+    border-color: rgb(var(--accent));
+    background: rgb(var(--accent));
+    color: white;
+  }
+  
+  .platform-switcher button:hover:not(.active) {
+    border-color: rgb(var(--accent));
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    .platform-switcher button {
+      background: #1f2937;
+      border-color: #374151;
+      color: white;
+    }
+    
+    .platform-switcher button:hover:not(.active) {
+      border-color: rgb(var(--accent));
+    }
+  }
+</style>

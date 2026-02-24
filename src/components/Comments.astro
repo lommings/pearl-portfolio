@@ -1,0 +1,69 @@
+---
+const { path } = Astro.props;
+// 稍後會設定 Waline 伺服器網址
+const walineServer = 'https://your-waline.vercel.app'; // 部署 Waline 後修改這裡
+---
+
+<div id="waline-container"></div>
+
+<script define:vars={{ path, walineServer }}>
+  // 動態載入 Waline
+  import('https://unpkg.com/@waline/client@v3/dist/waline.js').then((module) => {
+    const Waline = module.default || module;
+    Waline.init({
+      el: '#waline-container',
+      serverURL: walineServer,
+      path: path || window.location.pathname,
+      lang: 'zh-TW',
+      locale: {
+        placeholder: '留下你的想法...',
+        sofa: '快來搶沙發~',
+        submit: '發送',
+        nick: '暱稱',
+        mail: 'Email',
+        link: '網址',
+      },
+      emoji: [
+        '//unpkg.com/@waline/emojis@1.2.0/weibo',
+        '//unpkg.com/@waline/emojis@1.2.0/bilibili',
+      ],
+      dark: 'auto',
+      meta: ['nick', 'mail', 'link'],
+      requiredMeta: ['nick'],
+      pageview: true,
+      comment: true,
+    });
+  });
+</script>
+
+<style is:global>
+  @import 'https://unpkg.com/@waline/client@v3/dist/waline.css';
+  
+  #waline-container {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .wl-panel {
+    background: #f9fafb;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+  
+  .wl-header {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  @media (prefers-color-scheme: dark) {
+    #waline-container {
+      border-top-color: #374151;
+    }
+    
+    .wl-panel {
+      background: #1f2937;
+    }
+  }
+</style>
