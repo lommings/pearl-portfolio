@@ -2,7 +2,7 @@
 title: '歡迎來到我的創作空間'
 description: '這是一篇示範文章，展示如何使用各種功能'
 pubDate: 'Feb 24 2026'
-heroImage: '/blog-placeholder-3.jpg'
+heroImage: '../../assets/blog-placeholder-3.jpg'
 ---
 
 歡迎來到我的創作世界！這裡會分享我的故事、遊戲和畫作。
