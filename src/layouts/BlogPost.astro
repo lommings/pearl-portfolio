@@ -85,6 +85,7 @@ const { title, description, pubDate, updatedDate, heroImage, category, tags } = 
 				justify-content: center;
 				margin-top: 1rem;
 				flex-wrap: wrap;
+				align-items: center;
 			}
 			
 			.category-badge {
@@ -97,6 +98,17 @@ const { title, description, pubDate, updatedDate, heroImage, category, tags } = 
 				border-radius: 20px;
 				font-size: 0.9rem;
 				font-weight: 500;
+			}
+			
+			.pageview-count {
+				display: inline-flex;
+				align-items: center;
+				gap: 0.5rem;
+				padding: 0.5rem 1rem;
+				background: rgb(var(--gray-light));
+				color: rgb(var(--gray-dark));
+				border-radius: 20px;
+				font-size: 0.9rem;
 			}
 			
 			.tags {
@@ -193,6 +205,12 @@ const { title, description, pubDate, updatedDate, heroImage, category, tags } = 
 											))}
 										</div>
 									)}
+									<!-- 瀏覽次數 -->
+									<span class="pageview-count">
+										<span>👁️</span>
+										<span class="waline-pageview-count" data-path={Astro.url.pathname}>0</span>
+										<span>次瀏覽</span>
+									</span>
 								</div>
 								
 								<hr />
