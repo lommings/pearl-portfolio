@@ -4,6 +4,7 @@ import BaseHead from '../../components/BaseHead.astro';
 import Header from '../../components/Header.astro';
 import Footer from '../../components/Footer.astro';
 import FormattedDate from '../../components/FormattedDate.astro';
+import BlogSidebar from '../../components/BlogSidebar.astro';
 
 export async function getStaticPaths() {
   const allPosts = await getCollection('blog');
@@ -29,9 +30,25 @@ const { posts } = Astro.props;
     <style>
       main {
         width: 100%;
-        max-width: 1200px;
+        max-width: 1400px;
         margin: 0 auto;
-        padding: 2rem;
+        padding: 0 2em;
+      }
+      
+      .blog-container {
+        display: grid;
+        grid-template-columns: 280px 1fr;
+        gap: 2rem;
+        margin-top: 2rem;
+      }
+      
+      .sidebar-wrapper {
+        grid-column: 1;
+      }
+      
+      .content-wrapper {
+        grid-column: 2;
+        min-width: 0;
       }
       
       .tag-header {
@@ -121,6 +138,37 @@ const { posts } = Astro.props;
         font-size: 0.8rem;
       }
       
+      /* 響應式設計 */
+      @media (max-width: 960px) {
+        .blog-container {
+          grid-template-columns: 1fr;
+        }
+        
+        .sidebar-wrapper {
+          grid-column: 1;
+          grid-row: 1;
+        }
+        
+        .content-wrapper {
+          grid-column: 1;
+          grid-row: 2;
+        }
+        
+        main {
+          padding: 0 1em;
+        }
+      }
+      
+      @media (max-width: 640px) {
+        .posts-grid {
+          grid-template-columns: 1fr;
+        }
+        
+        .tag-header h1 {
+          font-size: 2rem;
+        }
+      }
+      
       @media (prefers-color-scheme: dark) {
         .post-card {
           background: rgb(30, 30, 30);
@@ -132,35 +180,45 @@ const { posts } = Astro.props;
   <body>
     <Header />
     <main>
-      <div class="tag-header">
-        <div class="tag-icon">🏷️</div>
-        <h1>#{tag}</h1>
-        <p class="post-count">共 {posts.length} 篇文章</p>
-      </div>
-      
-      <ul class="posts-grid">
-        {posts.map(post => (
-          <li class="post-card">
-            <a href={`/blog/${post.slug}/`}>
-              {post.data.heroImage && (
-                <img src={post.data.heroImage.src} alt="" class="post-image" />
-              )}
-              <div class="post-content">
-                <h2 class="post-title">{post.data.title}</h2>
-                <p class="post-description">{post.data.description}</p>
-                <div class="post-meta">
-                  <span class="post-date">
-                    <FormattedDate date={post.data.pubDate} />
-                  </span>
-                  {post.data.category && (
-                    <span class="category-badge">{post.data.category}</span>
+      <div class="blog-container">
+        <!-- 左側邊欄 -->
+        <div class="sidebar-wrapper">
+          <BlogSidebar />
+        </div>
+        
+        <!-- 右側內容 -->
+        <div class="content-wrapper">
+          <div class="tag-header">
+            <div class="tag-icon">🏷️</div>
+            <h1>#{tag}</h1>
+            <p class="post-count">共 {posts.length} 篇文章</p>
+          </div>
+          
+          <ul class="posts-grid">
+            {posts.map(post => (
+              <li class="post-card">
+                <a href={`/blog/${post.id}/`}>
+                  {post.data.heroImage && (
+                    <img src={post.data.heroImage.src} alt="" class="post-image" />
                   )}
-                </div>
-              </div>
-            </a>
-          </li>
-        ))}
-      </ul>
+                  <div class="post-content">
+                    <h2 class="post-title">{post.data.title}</h2>
+                    <p class="post-description">{post.data.description}</p>
+                    <div class="post-meta">
+                      <span class="post-date">
+                        <FormattedDate date={post.data.pubDate} />
+                      </span>
+                      {post.data.category && (
+                        <span class="category-badge">{post.data.category}</span>
+                      )}
+                    </div>
+                  </div>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
     </main>
     <Footer />
   </body>
