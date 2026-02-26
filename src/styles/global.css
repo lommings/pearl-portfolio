@@ -78,6 +78,10 @@ strong,
 b {
 	font-weight: 700;
 }
+em,
+i {
+	font-style: italic;
+}
 a {
 	color: var(--accent);
 }
