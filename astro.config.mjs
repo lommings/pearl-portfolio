@@ -8,4 +8,11 @@ import { defineConfig } from 'astro/config';
 export default defineConfig({
 	site: 'https://your-domain.com', // 部署後改成你的域名
 	integrations: [mdx(), sitemap()],
+	vite: {
+		define: {
+			'import.meta.env.PUBLIC_WALINE_SERVER': JSON.stringify(
+				process.env.PUBLIC_WALINE_SERVER || 'https://your-waline.vercel.app'
+			)
+		}
+	}
 });

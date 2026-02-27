@@ -1,7 +1,7 @@
 ---
 const { path } = Astro.props;
-// 稍後會設定 Waline 伺服器網址
-const walineServer = 'https://your-waline.vercel.app'; // 部署 Waline 後修改這裡
+// 從環境變數讀取 Waline 伺服器網址
+const walineServer = import.meta.env.PUBLIC_WALINE_SERVER;
 ---
 
 <div id="waline-container"></div>
