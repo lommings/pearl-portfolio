@@ -19,6 +19,7 @@
 
 ### 💬 留言系統
 - **[waline-deployment-guide.md](./waline-deployment-guide.md)** - Waline 留言系統部署指南 (PostgreSQL + Vercel)
+- **[waline-usage-guide.md](./waline-usage-guide.md)** - Waline 日常使用與管理指南
 - **[scripts/](./scripts/)** - Waline 資料庫初始化腳本
 
 ### 🔧 疑難排解
