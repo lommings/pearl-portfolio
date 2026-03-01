@@ -220,7 +220,7 @@ const { title, description, pubDate, updatedDate, heroImage, category, tags } = 
 						
 						<!-- 留言區 -->
 						<div class="prose">
-							<Comments path={Astro.url.pathname} />
+							<Comments path={Astro.url.pathname} title={title} />
 						</div>
 					</article>
 				</div>

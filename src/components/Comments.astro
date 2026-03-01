@@ -1,5 +1,5 @@
 ---
-const { path } = Astro.props;
+const { path, title } = Astro.props;
 // 從環境變數讀取 Waline 伺服器網址
 const walineServer = import.meta.env.PUBLIC_WALINE_SERVER;
 ---
@@ -9,10 +9,11 @@ const walineServer = import.meta.env.PUBLIC_WALINE_SERVER;
 
 <div id="waline-container"></div>
 
-<script define:vars={{ path, walineServer }}>
+<script define:vars={{ path, title, walineServer }}>
   // 動態載入 Waline
   import('https://unpkg.com/@waline/client@v3/dist/waline.js').then((module) => {
     const Waline = module.default || module;
+    
     Waline.init({
       el: '#waline-container',
       serverURL: walineServer,
