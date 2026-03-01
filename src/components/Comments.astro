@@ -4,6 +4,9 @@ const { path } = Astro.props;
 const walineServer = import.meta.env.PUBLIC_WALINE_SERVER;
 ---
 
+<!-- 直接引入 Waline CSS -->
+<link rel="stylesheet" href="https://unpkg.com/@waline/client@v3/dist/waline.css" />
+
 <div id="waline-container"></div>
 
 <script define:vars={{ path, walineServer }}>
@@ -37,8 +40,6 @@ const walineServer = import.meta.env.PUBLIC_WALINE_SERVER;
 </script>
 
 <style is:global>
-  @import 'https://unpkg.com/@waline/client@v3/dist/waline.css';
-  
   #waline-container {
     margin-top: 3rem;
     padding-top: 2rem;
