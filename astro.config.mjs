@@ -11,7 +11,7 @@ export default defineConfig({
 	vite: {
 		define: {
 			'import.meta.env.PUBLIC_WALINE_SERVER': JSON.stringify(
-				process.env.PUBLIC_WALINE_SERVER || 'https://your-waline.vercel.app'
+				process.env.PUBLIC_WALINE_SERVER || 'https://waline-eight-coral.vercel.app'
 			)
 		}
 	}
