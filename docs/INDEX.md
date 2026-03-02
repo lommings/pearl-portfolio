@@ -10,6 +10,7 @@
 - **[實作步驟.md](./實作步驟.md)** - 從零到上線的完整步驟
 - **[建站檢查清單.md](./建站檢查清單.md)** - 進度追蹤清單
 - **[部署到Cloudflare.md](./部署到Cloudflare.md)** - Cloudflare Pages 部署指南
+- **[custom-domain-setup.md](./custom-domain-setup.md)** - 自訂網域設定指南
 
 ### 🎨 功能與開發
 - **[程式碼範例.md](./程式碼範例.md)** - 組件與功能範例

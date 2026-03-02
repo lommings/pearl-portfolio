@@ -60,6 +60,7 @@
 |------|----------|
 | **從零開始建站** | [實作步驟.md](./實作步驟.md) |
 | **部署到網路上** | [部署到Cloudflare.md](./部署到Cloudflare.md) |
+| **設定自訂網域** | [custom-domain-setup.md](./custom-domain-setup.md) |
 | **加入留言功能** | [waline-deployment-guide.md](./waline-deployment-guide.md) |
 | **寫一篇文章** | [日常更新流程.md](./日常更新流程.md) |
 | **嵌入影片或遊戲** | [程式碼範例.md](./程式碼範例.md) |
