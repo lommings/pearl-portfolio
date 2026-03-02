@@ -3,6 +3,8 @@ import BaseHead from '../components/BaseHead.astro';
 import Footer from '../components/Footer.astro';
 import Header from '../components/Header.astro';
 import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
+import { Image } from 'astro:assets';
+import arashiLogo from '../assets/arashi-logo.png';
 ---
 
 <!doctype html>
@@ -13,6 +15,10 @@ import { SITE_DESCRIPTION, SITE_TITLE } from '../consts';
 	<body>
 		<Header />
 		<main>
+			<div style="text-align: center; margin: 2rem 0;">
+				<Image src={arashiLogo} alt="ARASHI Logo" width={200} height={200} style="display: inline-block;" />
+			</div>
+			
 			<h1>✨ 歡迎來到我的創作世界</h1>
 			
 			<p style="font-size: 1.05em; line-height: 1.8;">
