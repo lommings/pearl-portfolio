@@ -19,7 +19,7 @@ title: 深寂-Lone Walk in the Depths-01
 
 坐在書桌前，大野試圖專注於學習，但他的心思根本無法進入課業，字句在他眼前模糊不清。那些爭吵聲彷彿將他的心思一次次拉回那個混亂的現實。手中緊握著筆，無法寫下數學公式，而是化為一團團糾結的線條。
 
-他的目光不自覺地落在牆上那幅全家福的畫，那是他小學時期的作品，生動捕捉了一家三口郊遊時的溫馨快樂。當時的他，滿懷歡喜，將那幸福的時刻定格在畫布上。父母當時對這幅畫讚賞有加，那是他們對他繪畫天賦的認可，也是他對繪畫產生興趣的開始。
+他的目光不自覺地落在牆上那幅全家福的畫，<span style="color: #0F0F0F; font-family: 'Segoe UI'">那是他小學時期的作品，生動捕捉了一家三口郊遊時的溫馨快樂。當時的他，滿懷歡喜，將那幸福的時刻定格在畫布上。父母當時對這幅畫讚賞有加</span>，那是他們對他繪畫天賦的認可，也是他對繪畫產生興趣的開始。
 
 等他升上中學以後，父母希望他專注於學業，不應把重心放在繪畫上。但是大野依然會偷偷拿起畫筆，用色彩和線條表達他的情感。
 
@@ -33,7 +33,7 @@ title: 深寂-Lone Walk in the Depths-01
 
 他想，這次母親要等多久，父親才會回來。
 
-※
+<span style="font-family: '新細明體'">※</span>
 
 在高中的第一個學期，大野放下畫筆，將所有時間都投入到學業中，希望這能改善家裡的氣氛。
 
@@ -47,7 +47,7 @@ title: 深寂-Lone Walk in the Depths-01
 
 大野滿是失落。
 
-※
+<span style="font-family: '新細明體'">※</span>
 
 大野第二天醒來，家中空無一人。他在家中靜靜地等待，直到下午母親才獨自一人回家。她看起來疲憊，但眼神中透露出解脫。
 
@@ -57,9 +57,9 @@ title: 深寂-Lone Walk in the Depths-01
 
 「我們要回我的故鄉，遠離這一切的地方。」母親說。
 
-「但我不想離開東京，這裡有我的學校，我的朋友，我的......」大野未能說出「家」這一字。
+「<span style="color: #0F0F0F; font-family: 'Segoe UI'">但我不想離開東京，這裡有我的學校，我的朋友，我的</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">......</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">」大野未能說出「家」這一字。</span>
 
-他的家庭或許已經破碎，但這個城市裝載著他從小到大的無數記憶：學校走廊的熙熙攘攘，朋友們的歡聲笑語，這些平凡而深刻的日常讓他無法割捨。他的聲音低落，似乎藏著對未知未來的畏懼，以及對現在生活的深切眷戀。
+<span style="color: #0F0F0F; font-family: 'Segoe UI'">他的家庭或許已經破碎，但這個城市裝載著他從小到大的無數記憶：學校走廊的熙熙攘攘，朋友們的歡聲笑語，這些平凡而深刻的日常讓他無法割捨。他的聲音低落，似乎藏著對未知未來的畏懼，以及對現在生活的深切眷戀。</span>
 
 所以當母親告訴他們要離開東京，他們必須離開這個熟悉的城市，前往一個陌生的小島時，大野最初的反應是反抗。
 
@@ -69,11 +69,11 @@ title: 深寂-Lone Walk in the Depths-01
 
 大野看到母親那嬌小而脆弱的模樣，他心碎了，父親已不再愛他們了，他屈服了。
 
-大野走回到房間，開始整理行李。牆上那幅他手繪的全家福，線條簡單、色彩鮮明，彷佛是童心未泯的梦境。
+<span style="color: #0F0F0F; font-family: 'Segoe UI'">大野走回到房間，開始整理行李。牆上那幅他手繪的全家福，線條簡單、色彩鮮明，</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">彷</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">佛是童心未泯的梦境。</span>
 
-當初，他用稚嫩的筆法畫下和樂融融的一家三口，那時候父母感情和睦。現在，隨著父母婚姻的破裂，這幅畫成成為了時光的容器，裝載著那段美好的回憶。
+當初，他用稚嫩的筆法畫下和樂融融的一家三口，那時候父母感情和睦。現在，隨著父母婚姻的破裂，<span style="color: #0F0F0F; font-family: 'Segoe UI'">這幅畫成成為了時光的容器，裝載著那段美好的回憶。</span>
 
-比對如今的家庭破碎，他的心情沉重，對逝去的幸福無比懷念。
+<span style="color: #0F0F0F; font-family: 'Segoe UI'">比對如今的家庭破碎，他的心情沉重，</span>對逝去的幸福無比懷念。
 
 ![](../../assets/lone-walk-in-the-depths-01/word_image_001.jpg)
 
@@ -105,7 +105,7 @@ title: 深寂-Lone Walk in the Depths-01
 
 儘管母親不斷保證島上的美好，他卻覺得那是安撫之詞。他心中充滿了疑問：自己能否適應新生活？若父親的情人左右父親，他會不會永遠困於這座小島？
 
-陸地逐漸在視野中模糊消逝。他的過往、他的回憶，現在都已遙不可及。
+<span style="color: #0F0F0F; font-family: 'Segoe UI'">陸地逐漸在視野中模糊消逝。他的過往、他的回憶，</span>現在都已遙不可及。
 
 ![](../../assets/lone-walk-in-the-depths-01/word_image_002.jpg)
 
@@ -155,11 +155,11 @@ title: 深寂-Lone Walk in the Depths-01
 
 就在棒球隊訓練漸入佳境時，天空變得陰沉，一場突如其來的暴雨迫使他們中止了訓練，只能遺憾地解散。
 
-由於還早，幾位同齡的隊員，也是相葉的同班同學，並未匆匆踏上歸途，而是齊聚於相葉家中。那裡，開著一家溫馨的餐廳，由相葉的母親美代子主理，她以熱情的款待和美味佳餚聞名，大家都很喜歡她。
+由於還早，幾<span style="color: #0F0F0F; font-family: 'Segoe UI'">位同齡的隊員，</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">也是相葉的</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">同班同學，並未匆匆踏上歸途，而是齊聚於相葉家中。那裡，開著一家溫馨的餐廳，</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">由相葉的</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">母親</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">美代子主理</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">，她以熱情的款待和美味佳餚聞名，</span>大家都很喜歡她。
 
 朋友們攀上樓至相葉的房間，尋找各自的娛樂消遣。風間沉浸於漫畫世界，相葉與橫山則沉醉於電子遊戲的樂趣中。
 
-二宮也想玩遊戲，但遊戲機僅限於雙人，只得在一旁耐心等候。
+二宮也想玩遊戲，<span style="color: #0F0F0F; font-family: 'Segoe UI'">但遊戲機僅限於雙人，只得在一旁耐心等候。</span>
 
 「你上學期的成績不太理想，應該趁暑假努力一下。」二宮好心地提醒。
 
@@ -167,9 +167,9 @@ title: 深寂-Lone Walk in the Depths-01
 
 「等到暑假結束，你就會後悔沒早點開始了。」二宮說。
 
-他們的對話被樓梯口的美代子打斷，她喚著：「雅紀，下來幫忙！」
+<span style="color: #0F0F0F; font-family: 'Segoe UI'">他們的對話被樓梯口的美代子打斷，她</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">喚著</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">：「</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">雅紀</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">，下來幫忙！」</span>
 
-在相葉家的餐館，每日為了確保菜餚的新鮮和開店所需的各種物品，母子倆時常需要前往港邊。在那波光粼粼的碼頭上，精心挑選最佳的食材，並搬運必要的用品。
+<span style="color: #0F0F0F; font-family: 'Segoe UI'">在相葉家</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">的餐館，每日為了確保菜餚的新鮮和開店所需的各種物品，母子倆時常需要前往港邊。在那波光粼粼的碼頭上，精心挑選最佳的食材，並搬運必要的用品。</span>
 
 「媽，今天是好不容易可以休息，能不能讓我放鬆一會？」相葉說。
 
@@ -181,9 +181,9 @@ title: 深寂-Lone Walk in the Depths-01
 
 「沒關係，你去吧，我們在這等你。」二宮見狀立刻接話。
 
-而朋友們因為平常接受了美代子的照顧，在這關鍵時刻也紛紛倒戈，催促他去幫忙。相葉無奈離開，留下朋友們在房間裡聊天，二宮也乘機接過了遊戲手柄。
+而朋友們因為平常接受了美代子的照顧，在這關鍵時刻也紛紛倒戈，催促他去幫忙。相葉無奈離開，留下朋友們在房間裡聊天，<span style="color: #0F0F0F; font-family: 'Segoe UI'">二宮也乘機接過了遊戲</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">手柄</span>。
 
-窗外的雨終於歇止，但對相葉而言，今日的休憩已成泡影。
+<span style="color: #0F0F0F; font-family: 'Segoe UI'">窗外的雨終於歇止，但</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">對相葉而言</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">，今日的休憩已成泡影。</span>
 
 ![](../../assets/lone-walk-in-the-depths-01/word_image_008.jpg)
 
@@ -199,7 +199,7 @@ title: 深寂-Lone Walk in the Depths-01
 
 當渡輪停靠，美代子墊起腳尖，焦急地掃視著從船上下來的人群，而相葉則顯得有些不耐煩，雙手插在口袋裡，隨意地踢著碼頭邊的小石子。他對即將到來的新朋友感到好奇。
 
-這時，一個男孩從渡輪上緩緩走下，他的身影如同磁鐵般吸引了相葉的注意。陽光透過厚實的雲層灑下，將金色的輝煌投射在他身上，使他在眾人中顯得格外耀眼。他那獨特的肌膚色調、帶有城市人特有的優雅與沉靜，加上他俊秀的面容和嚴肅的神情，自帶一股難以親近卻又深深吸引人的的氛圍。
+這時，一個男孩從渡輪上緩緩走下<span style="color: #0F0F0F; font-family: 'Segoe UI'">，他的身影如同磁鐵般吸引</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">了相葉的</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">注意。陽光透過厚實的雲層灑下，將金色的輝煌投射在他身上，使他在眾人中顯得格</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">外耀眼。他那獨特的肌膚色調、帶有城市人特有的優雅與沉靜，加上他俊秀的面容和嚴肅的神情，自帶一股</span>難以親近卻又深深吸引人的的氛圍。
 
 此刻，美代子揚起手臂舞動，一位女士回應了她的問候，並與那男孩一起走向他們。
 
@@ -215,7 +215,7 @@ title: 深寂-Lone Walk in the Depths-01
 
 「你好，我是大野智。」大野的目光雙眼轉向相葉，點了點頭，面無表情，並未接受那伸出的手。
 
-儘管感受到了大野智的冷淡和疏遠，相葉卻不以為意，反而對這位有著神秘氣息的新朋友更感到好奇。而他還未曾意識到，自己的世界將從這一刻悄然改變。
+儘管感受到了大野智的冷淡和疏遠，相葉<span style="color: #0F0F0F; font-family: 'Segoe UI'">卻</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">不以為意，</span>反而對這位有著神秘氣息的新朋友更感到好奇。而他還未曾意識到，自己的世界將從這一刻悄然改變。
 
 ![](../../assets/lone-walk-in-the-depths-01/word_image_009.jpg)
 
@@ -225,7 +225,7 @@ title: 深寂-Lone Walk in the Depths-01
 
 [圖片說明]：小豆島港口。
 
-※
+<span style="font-family: '新細明體'">※</span>
 
 為了幫助大野融入新環境，相葉帶他來參加棒球社的暑期集訓活動。
 
@@ -239,25 +239,25 @@ title: 深寂-Lone Walk in the Depths-01
 
 這種矛盾使得球場氛圍微妙，團隊的互動也受影響。
 
-之後在8月有夏季全國高校野球選手権大會，參賽的高中棒球隊需在地區預選中脫穎而出，而香川縣的地區預賽在7月舉行。
+之後在8月有夏季全國高校野球選手権大會，參賽的高中棒球隊需在地區預選中脫穎而出，<span style="color: #0F0F0F; font-family: 'Segoe UI'">而香川縣的地區預賽在</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">7</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">月舉行。</span>
 
-雖然他們因實力不足未曾代表香川縣參加全國賽，但在9月舉辦地區性賽事——「秋季四國地區高等學校野球香川縣大會」，他們還是有機會獲得取得不錯的成績。全隊都在為即將到來的秋季大會做準備，所以暑假的訓練格外重要。像這種地區性賽事，雖不直接決定全國賽資格，但對球隊的實力和聲譽有重大影響。
+雖然他們因實力不足未曾代表香川縣參加全國賽，但<span style="color: #0F0F0F; font-family: 'Segoe UI'">在</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">9</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">月舉辦</span>地區性賽事——「秋季四國地區高等學校野球香川縣大會」，<span style="color: #0F0F0F; font-family: 'Segoe UI'">他們還是有機會獲得取得不錯的成績。</span>全隊都在為即將到來的秋季大會做準備，<span style="color: #0F0F0F; font-family: 'Segoe UI'">所以</span>暑假的訓練格外重要。像這種地區性賽事，雖不直接決定全國賽資格，但對球隊的實力和聲譽有重大影響。
 
 二宮對相葉在這關鍵時刻帶來一個不相干的人感到不滿：大野的不合群，會損害了球隊的凝聚力。
 
 於是當著大野的面，二宮對相葉說：「你以後別再帶這人來棒球場了。」
 
-「抱歉，是我錯了，大野對棒球沒興趣我還勉強他。」相葉說，「我會帶他去做別的他有興趣的事。」
+<span style="color: #0F0F0F; font-family: 'Segoe UI'">「抱歉，是我錯了，</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">大野對棒球</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">沒興趣我還勉強他。」</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">相葉說</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">，「我會帶他去</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">做別</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">的他有興趣的事。」</span>
 
 「但我們暑假還有訓練，如果他不一起參加棒球社，你哪有時間陪他？」二宮說。
 
-「我本來對棒球野沒那麼有興趣，反正我是候補球員。來不來參加都沒關係。」相葉有些賭氣地說。
+<span style="color: #0F0F0F; font-family: 'Segoe UI'">「我本來對</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">棒球野沒那麼</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">有興趣，反正我是候補球員。來不來參加都沒關係。」</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">相葉有些</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">賭氣地說。</span>
 
-二宮非常生氣，沒想到相葉為了照顧大野，說要減少訓練時間。 
+<span style="color: #0F0F0F; font-family: 'Segoe UI'">二宮非常生氣，</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">沒想到相葉為了</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">照顧大野，</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">說要減少</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">訓練時間。</span><span style="color: #0F0F0F; font-family: 'Segoe UI'"> </span>
 
-「你這樣會被踢出社團的！」二宮大聲說。 
+<span style="color: #0F0F0F; font-family: 'Segoe UI'">「你這樣會被踢出社團的！」二宮大聲說。</span><span style="color: #0F0F0F; font-family: 'Segoe UI'"> </span>
 
-「或許是社團不夠包容新人吧。」相葉說完，拉著大野離開。
+<span style="color: #0F0F0F; font-family: 'Segoe UI'">「或許是社團不夠包容新人吧。」</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">相葉說完</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">，拉著大野離開。</span>
 
 ※
 
@@ -265,9 +265,9 @@ title: 深寂-Lone Walk in the Depths-01
 
 相葉邀請二宮一起加入，但二宮卻顯得有些不情願。
 
-「我們是本地人，去那些地方做什麼？人擠人熱死了。再說我們已經去過無數次了。」他抱怨道，「我們還是去打棒球吧！」
+<span style="color: #0F0F0F; font-family: 'Segoe UI'">「</span>我們是本地人，去那些地方做什麼？人擠人熱死了。再說我們已經去過無數次了。」他抱怨道，「我們還是去打棒球吧！」
 
-「但大野是第一次來，對他來說這一切都是新鮮的。」相葉說，「我想給他一個好印象。」
+<span style="color: #0F0F0F; font-family: 'Segoe UI'">「</span>但大野是第一次來，對他來說這一切都是新鮮的。」相葉說，<span style="color: #0F0F0F; font-family: 'Segoe UI'">「</span>我想給他一個好印象。」
 
 「這傢夥可沒給我一個好印象。」二宮嘟囔。
 
@@ -275,33 +275,33 @@ title: 深寂-Lone Walk in the Depths-01
 
 ![](../../assets/lone-walk-in-the-depths-01/word_image_011.jpg)
 
-[圖片說明]：小豆島高校的棒球場。
+[圖片說明]：<span style="color: #0F0F0F; font-family: 'Segoe UI'">小豆島高校的棒球場</span><span style="color: #0F0F0F; font-family: 'Segoe UI'">。</span>
 
 ※
 
 在一個晴朗的下午，相葉帶著大野和二宮來到了海邊的垂釣地，這裡是當地人熱愛的釣魚去處。海風微涼，浪花輕拍岸邊的岩石，海面上偶爾有漁船緩緩駛過，營造出一種寧靜而愜意的氛圍。
 
-「今天我一定能釣到最多的魚！」二宮自信滿滿地發言。
+<span style="color: #0F0F0F; font-family: 'Segoe UI'">「</span>今天我一定能釣到最多的魚！」二宮自信滿滿地發言。
 
 然而，隨著時間的推移，大野展現出了驚人的釣魚技巧，頻頻有收穫，而二宮卻幾乎一無所獲。
 
-「你真的很擅長釣魚，大野。」相葉對大野表示讚賞。
+<span style="color: #0F0F0F; font-family: 'Segoe UI'">「</span>你真的很擅長釣魚，大野。」相葉對大野表示讚賞。
 
-「這沒什麼，我可能比較有經驗。」大野說。
+<span style="color: #0F0F0F; font-family: 'Segoe UI'">「</span>這沒什麼，我可能比較有經驗。」大野說。
 
-「你一個城市小孩怎麼這麼會釣魚？」二宮說。
+<span style="color: #0F0F0F; font-family: 'Segoe UI'">「</span>你一個城市小孩怎麼這麼會釣魚？」二宮說。
 
-「我以前常跟爸爸去海釣。」大野說。
+<span style="color: #0F0F0F; font-family: 'Segoe UI'">「</span>我以前常跟爸爸去海釣。」大野說。
 
-「你爸爸很愛釣魚嗎？」二宮追問。
+<span style="color: #0F0F0F; font-family: 'Segoe UI'">「</span>你爸爸很愛釣魚嗎？」二宮追問。
 
-「是的，我們有艘遊艇，週末時常出海。」大野說。
+<span style="color: #0F0F0F; font-family: 'Segoe UI'">「</span>是的，我們有艘遊艇，週末時常出海。」大野說。
 
-「你是在炫耀嗎？真是的！」
+<span style="color: #0F0F0F; font-family: 'Segoe UI'">「</span>你是在炫耀嗎？真是的！」
 
 二宮聽到這話，心情變得更加差。
 
-相葉察覺到二宮的情緒，趕緊安撫道：「別這樣，二宮。釣魚嘛，最重要的是享受過程，不是嗎？釣魚也要靠運氣的。」
+相葉察覺到二宮的情緒，趕緊安撫道：<span style="color: #0F0F0F; font-family: 'Segoe UI'">「</span>別這樣，二宮。釣魚嘛，最重要的是享受過程，不是嗎？釣魚也要靠運氣的。」
 
 二宮默默地整理起他的釣具，內心泛起一絲落寞。他努力的釣魚成果並未如期，而相葉的目光卻牢牢吸附在大野的身上。那份專注，令二宮心中五味雜陳，他雖然對大野那絕佳的釣魚技巧抱以欽佩，卻也不免對相葉如此顯著的關注感到一絲嫉妒。
 
@@ -319,9 +319,9 @@ title: 深寂-Lone Walk in the Depths-01
 
 但二宮發現，相葉的人在這裡，心思卻似乎仍然停留在大野身上。當他翻看相葉的日記作業時，發現裡面記載了許多關於大野的事情，這讓他感到嫉妒。
 
-「你為什麼這麼關注他？」二宮質問，「滿滿寫的都是大野，簡直像跟蹤狂。」
+<span style="color: #0F0F0F; font-family: 'Segoe UI'">「</span>你為什麼這麼關注他？」二宮質問，「滿滿寫的都是大野，簡直像跟蹤狂。」
 
-「我才不是跟蹤狂，是媽媽叫我照顧他，我只是做我該做的。」相葉慌亂地辯解。
+<span style="color: #0F0F0F; font-family: 'Segoe UI'">「</span>我才不是跟蹤狂，是媽媽叫我照顧他，我只是做我該做的。」相葉慌亂地辯解。
 
 原本二宮理所當然地認為，這個暑假會延續過往的傳統：與相葉在炎烈的陽光下球場上一汗方休，享受遊戲機上的激戰較量，互相交換著他們最新一期的漫畫，或是肩並肩靜候垂釣的成果。
 
@@ -338,83 +338,83 @@ title: 深寂-Lone Walk in the Depths-01
 棒球少年 non-no 2010年 11月 二宮和也 三浦春馬 チャンミン トートなし
 
 
-※
+<span style="font-family: '新細明體'">※</span>
 
-開學第一天早上，相葉發現自己遺漏了幾道數學習題，急忙向二宮求助。
+<span style="font-family: '新細明體'">開學第一天早上，</span><span style="font-family: '新細明體'">相葉發現</span><span style="font-family: '新細明體'">自己遺漏了幾道數學習題，急忙向二宮求助。</span>
 
-「喂，和也，借我抄一下！」相葉希望能在老師抵達前迅速抄下數學習題。
+<span style="font-family: '新細明體'">「喂，和也，借我抄一下！」</span><span style="font-family: '新細明體'">相葉希望</span><span style="font-family: '新細明體'">能在老師抵達前迅速抄下數學習題。</span>
 
-「算了吧，你自己想辦法。」二宮擺出一副不樂意的樣子，他還記著前幾天的不愉快，假裝作不肯借，想讓相葉感受到自己的重要性。
+<span style="font-family: '新細明體'">「算了吧，你自己想辦法。」二</span><span style="font-family: '新細明體'">宮擺出</span><span style="font-family: '新細明體'">一副不樂意的樣子，他還記著前幾天的不愉快，假裝作不肯借，想</span><span style="font-family: '新細明體'">讓相葉感受</span><span style="font-family: '新細明體'">到自己的重要性。</span>
 
-在二宮和相葉互相開玩笑，爭搶著作業本的打鬧中，教室的門忽然開啟，老師帶著一名新面孔走了進來。
+<span style="font-family: '新細明體'">在二宮</span><span style="font-family: '新細明體'">和相葉互相</span><span style="font-family: '新細明體'">開玩笑，爭搶著作業本的打鬧中，教室的門忽然開啟，老師帶著一名新面孔走了進來。</span>
 
-老師向全班介紹說，大野是一位從東京而來的轉學生，並且請他進行自我介紹。
+<span style="font-family: '新細明體'">老師向全班介紹說，大野是一位從東京而來的轉學生，並且請他進行自我介紹。</span>
 
-「大家好，我是大野智，請多多指教。」大野的話簡短，但他的聲音清晰，隨後，他就沉默了。
+<span style="font-family: '新細明體'">「大家好，我是</span><span style="font-family: '新細明體'">大野智</span><span style="font-family: '新細明體'">，請多多指教。」大野的話簡短，但他的聲音</span><span style="font-family: '新細明體'">清晰，</span><span style="font-family: '新細明體'">隨後，他就沉默了。</span>
 
-他那不多言的舉止，使得教室短暫的空氣凝固了下來，降臨了一片出乎意料的安靜。為了打破這突如其來的靜默，相葉便迅速熱情地開口。
+<span style="font-family: '新細明體'">他那不多言的舉止，使得教室短暫的空氣凝固了下來，降臨了一片出乎意料的安靜。為了打破這突如其來的靜默，</span><span style="font-family: '新細明體'">相葉便</span><span style="font-family: '新細明體'">迅速熱情地開口。</span>
 
-「大野同學是很聰明，而且釣魚技術也超一流，暑假的時候他還幫了我很多忙。」相葉興奮地補充道。
+<span style="font-family: '新細明體'">「大野同學是很聰明，而且釣魚技術也超一流，暑假的時候他還幫了我很多忙。」</span><span style="font-family: '新細明體'">相葉興奮</span><span style="font-family: '新細明體'">地補充道。</span>
 
-「你們認識？」老師略顯驚訝地詢問。
+<span style="font-family: '新細明體'">「你們認識？」老師略顯驚訝地詢問。</span>
 
-「是的，我們暑假一起玩耍。」相葉回答，看起來相當得意。
+<span style="font-family: '新細明體'">「是的，我們暑假一起玩耍。」</span><span style="font-family: '新細明體'">相葉回答</span><span style="font-family: '新細明體'">，看起來相當得意。</span>
 
-「那麼，就讓大野同學坐在相葉旁邊，這樣你可以幫助他更好地融入學校生活。」老師宣佈後說道：「二宮同學，麻煩你把座位換到門口那邊，謝謝你。」
+<span style="font-family: '新細明體'">「那麼，就讓大野同學坐在</span><span style="font-family: '新細明體'">相葉旁邊</span><span style="font-family: '新細明體'">，這樣你可以幫助他更好地融入學校生活。」老師宣佈後說道：「二宮同學，麻煩你把座位換到門口</span><span style="font-family: '新細明體'">那邊，</span><span style="font-family: '新細明體'">謝謝你。」</span>
 
-這個安排明顯是希望讓新生能快速適應新環境，但對一直坐在那個位置的二宮來說，無疑是個不小的變化。看著相葉興奮的樣子，二宮心裡雖然感到一股不快，但他還是咬牙壓抑住自己的情緒，默默地將自己的東西搬到了新的座位。
+<span style="font-family: '新細明體'">這個安排明顯是希望讓新生能快速適應新環境，但對一直坐在那個位置的二宮來說，無疑是個不小的變化。看</span><span style="font-family: '新細明體'">著相葉興奮</span><span style="font-family: '新細明體'">的樣子，二宮心裡雖然感到一股不快，但他還是咬牙壓抑住自己的情緒，默默地將自己的東西搬到了新的座位。</span>
 
-一到下課，大野立刻成為了女孩們熱切關注的中心。她們簇擁在他周圍，對他那來自東京的背景展開了無窮的好奇和詢問。雖然大野依然保持著其一貫的冷漠，相葉卻忍不住熱情地替他解答這些問題。
+<span style="font-family: '新細明體'">一到下課，大野立刻成為了女孩們熱切關注的中心。她們簇擁在他</span><span style="font-family: '新細明體'">周圍，</span><span style="font-family: '新細明體'">對他那來自東京的背景展開了無窮的好奇和詢問。雖然大野依然保持著其一貫的冷漠，</span><span style="font-family: '新細明體'">相葉卻</span><span style="font-family: '新細明體'">忍不住熱情地替他解答這些問題。</span>
 
-這樣的場面讓二宮甚是無奈，不禁暗自嘀咕：「這個傻瓜。」
+<span style="font-family: '新細明體'">這樣的場面讓二</span><span style="font-family: '新細明體'">宮甚是</span><span style="font-family: '新細明體'">無奈，不禁暗自嘀咕：「這個傻瓜。」</span>
 
-※
+<span style="font-family: '新細明體'">※</span>
 
-放學的鐘聲響起，二宮在教室門口站定，等待著與相葉一同踏上回家的路。然而，相葉似乎對周遭毫無覺察，依然與坐在旁邊的大野交談不斷。這種情況令二宮感到不耐煩，他踱步來到兩人身邊，卻發現他們正鑽研著數學問題。
+<span style="font-family: '新細明體'">放學的鐘聲響起，二宮在教室門口站定，等待著與相葉一同踏上回家的路。然而，</span><span style="font-family: '新細明體'">相葉似乎</span><span style="font-family: '新細明體'">對周遭毫無覺察，依然與坐在旁邊的大野交談不斷。這種情況令二宮感到不耐煩，他踱步來到兩人身邊，卻發現他們正鑽研著數學問題。</span>
 
-相葉在大野的幫助下解開了自己的疑惑，對此感到無比欣慰和開心。
+<span style="font-family: '新細明體'">相葉在</span><span style="font-family: '新細明體'">大野的幫助下解開了自己的疑惑，對此感到無比欣慰和開心。</span>
 
-「哇！大野真的很厲害。」相葉讚歎著。
+<span style="font-family: '新細明體'">「哇！大野真的很厲害。」相葉</span><span style="font-family: '新細明體'">讚歎著</span><span style="font-family: '新細明體'">。</span>
 
-這話聽在二宮耳中，更加刺激了他。在他眼裡，大野僅對作業稍作指點，相葉就這麼感激，可明明作業大部分都是抄自己的，為何不也來誇獎自己呢？
+<span style="font-family: '新細明體'">這話聽在二宮耳中，更加刺激了他。在他眼裡，</span><span style="font-family: '新細明體'">大野僅對</span><span style="font-family: '新細明體'">作業稍作指點，</span><span style="font-family: '新細明體'">相葉就</span><span style="font-family: '新細明體'">這麼感激，可明明作業大部分都是抄自己的，為何不也來誇獎自己呢？</span>
 
-「這種簡單的題目都不會，才會覺得厲害啊？」二宮帶著些許譏諷插嘴。
+<span style="font-family: '新細明體'">「這種簡單的題目都不會，才會覺得厲害啊？」二</span><span style="font-family: '新細明體'">宮帶著</span><span style="font-family: '新細明體'">些許譏諷插嘴。</span>
 
-「哎呀，我就是比較笨嘛，數學太難了！」相葉轉向二宮，「你知道嗎？大野講起來真的很容易理解，他一講我就懂了。」
+<span style="font-family: '新細明體'">「哎呀，我就是</span><span style="font-family: '新細明體'">比較笨嘛</span><span style="font-family: '新細明體'">，數學太難了！」</span><span style="font-family: '新細明體'">相葉轉向</span><span style="font-family: '新細明體'">二宮，「你知道嗎？</span><span style="font-family: '新細明體'">大野講起來</span><span style="font-family: '新細明體'">真的很容易理解，他一講我就懂了。」</span>
 
-「不過我覺得他總是一副想睡的樣子，上課也不聽老師講課，只會看著窗外發呆。」二宮說。
+<span style="font-family: '新細明體'">「不過我覺得他總是一副想睡的樣子，上課也不聽老師講課，只會看著窗外發呆。」二宮說。</span>
 
-「可是老師叫他起來回答問題，他都答得出來呢。」
+<span style="font-family: '新細明體'">「可是老師叫他起來回答問題，他都答</span><span style="font-family: '新細明體'">得出來呢</span><span style="font-family: '新細明體'">。」</span>
 
-「他大概是覺得鄉下教的課太簡單，不屑聽吧。」
+<span style="font-family: '新細明體'">「他大概是覺得鄉下教的課太簡單，</span><span style="font-family: '新細明體'">不屑聽吧</span><span style="font-family: '新細明體'">。」</span>
 
-「他一定是在沈思，在想更深入的問題。」
+<span style="font-family: '新細明體'">「他一定是在沈思，在想更深入的問題。」</span>
 
-「我們能不能不談大野了？我們一起回家吧。」
+<span style="font-family: '新細明體'">「我們能不能不談</span><span style="font-family: '新細明體'">大野了</span><span style="font-family: '新細明體'">？我們一起回家吧。」</span>
 
-「不行，我今天得送大野回家。他對這裡還不熟，需要我陪著。」
+<span style="font-family: '新細明體'">「不行，我今天得送大野回家。他對這裡還不熟，需要我陪著。」</span>
 
-「怎麼就拋下我了？」二宮瞪大了眼睛。
+<span style="font-family: '新細明體'">「怎麼就拋下我了？」二</span><span style="font-family: '新細明體'">宮瞪大</span><span style="font-family: '新細明體'">了眼睛。</span>
 
-「真不好意思，但是初來乍到，他還需要我幫忙指路。」
+<span style="font-family: '新細明體'">「真不好意思，但是初來乍到，他還需要我幫忙指路。」</span>
 
-「明明我家就在你家旁邊，為什麼不能跟我一起走？」二宮忿忿不平地質問道。不僅在學校連座位都被搶，連一同回家的路途都被攔截。
+<span style="font-family: '新細明體'">「明明我家就在你家旁邊，為什麼不能跟我一起走？」二宮忿忿不平地質問道。不僅在學校</span><span style="font-family: '新細明體'">連座</span><span style="font-family: '新細明體'">位都被搶，連一同回家的路途都被攔截。</span>
 
-「等大野熟悉環境後，我們再一起回家，好嗎？」
+<span style="font-family: '新細明體'">「等大野熟悉環境後，我們再一起回家，好嗎？」</span>
 
-相葉說完，就拉著大野走出教室。
+<span style="font-family: '新細明體'">相葉說完</span><span style="font-family: '新細明體'">，就拉著大野走出教室。</span>
 
-「你整個暑假都帶他在島上跑來跑去的，他還會不熟悉路況？」二宮獨自一人站在教室門口，有些氣憤地哼了一聲。
+<span style="font-family: '新細明體'">「你整個暑假都帶他在島上跑來跑去的，他還會不熟悉路況？」二宮獨自一人站在教室門口，有些氣憤地哼了一聲。</span>
 
-教室內還有一些同學仍未離開，二宮找到了棒球社的隊友——橫山和風間，開始吐槽起相葉對大野的過度保護。當他們想起大野在暑假棒球賽中的表現時，不禁也開始表達出自己的不滿。他們的聲音吸引了其它男同學的注意，這些男同學同樣因為大野在女生中的廣受歡迎以及他那冷漠的態度而感到一絲嫉妒。
+<span style="font-family: '新細明體'">教室內還有一些同學仍未離開，二宮找到了棒球社的隊友</span><span style="font-family: '新細明體'">——</span><span style="font-family: '新細明體'">橫山和風間，開始吐</span><span style="font-family: '新細明體'">槽起相葉</span><span style="font-family: '新細明體'">對大野的過度保護。當他們想起大野在暑假棒球賽中的表現時，不禁也開始表達出自己的不滿。他們的聲音吸引了其它男同學的注意，這些男同學同樣因為大野在女生中的廣受歡迎以及他那冷漠的態度而感到一絲嫉妒。</span>
 
-於是，這群學生決定要對大野進行一些「教育」，讓他明白在這座小島上，他不能夠肆無忌憚地忽略一切。
+<span style="font-family: '新細明體'">於是，這群學生決定要對大野進行一些「教育」，讓他明白在這座小島上，他不能夠肆無忌憚地忽略一切。</span>
 
 ![](../../assets/lone-walk-in-the-depths-01/word_image_014.jpg)
 
 [圖片說明]：高中教室
 
-※
+<span style="font-family: '新細明體'">※</span>
 
 對大野而言，父母的離異帶來了深刻的陰影，令他無法在心靈上打開，與人建立聯繫。他渴望的，只是返回那個充滿回憶的東京，回到那個安慰自己的舊世界中。
 
@@ -432,7 +432,7 @@ title: 深寂-Lone Walk in the Depths-01
 
 直到一次意外發生，他才察覺到情況不對。
 
-※
+<span style="font-family: '新細明體'">※</span>
 
 在那朵濃雲壓頂的午後，全班同學正於體育館內投身運動時，幾位同學不由分說地指派大野去搬運體育器材。當他們穿越陰暗的樓梯，來到地下室的儲物間前，大野使先邁入了這個房間，背後馬上傳來閂鎖之聲。他本能地回頭一望，門已關閉，獨留他一人陷入困境。
 
