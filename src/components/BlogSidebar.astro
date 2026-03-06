@@ -177,6 +177,10 @@ const currentId = Astro.url.pathname.split('/').filter(Boolean).pop()?.replace('
     transition: all 0.2s;
   }
 
+  .post-list a:visited {
+    color: #000000;
+  }
+
   .post-list a:hover {
     background: rgba(var(--accent), 0.1);
     color: rgb(var(--accent));
