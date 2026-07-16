@@ -1,0 +1,134 @@
+/**
+ * 小說生成腳本
+ * 從 Word 檔案生成多篇部落格文章
+ */
+
+import mammoth from 'mammoth';
+import fs from 'fs';
+import path from 'path';
+
+const args = process.argv.slice(2);
+if (args.length < 3) {
+  console.log('用法: node scripts/generate-novel.mjs <word檔案> <分類> <標籤(逗號分隔)>');
+  process.exit(1);
+}
+
+const [wordFile, category, tagsStr] = args;
+const tags = tagsStr.split(/[,，]/).map(t => t.trim());
+
+// 從檔名取得小說名稱
+const novelName = path.basename(wordFile, path.extname(wordFile));
+const safeNovelName = novelName.replace(/[\[\]]/g, '');
+
+console.log(`📖 小說: ${novelName}`);
+console.log(`📂 分類: ${category}`);
+console.log(`🏷️ 標籤: ${tags.join(', ')}`);
+
+// 讀取 Word 檔案
+const result = await mammoth.convertToHtml({ path: wordFile });
+const html = result.value;
+const textResult = await mammoth.extractRawText({ path: wordFile });
+const rawText = textResult.value;
+
+// 分割章節 - 使用 "Chapter XX" 格式
+const chapterRegex = /Chapter\s+(\d+)/gi;
+const matches = [...rawText.matchAll(chapterRegex)];
+
+console.log(`\n📚 找到 ${matches.length} 個章節\n`);
+
+// 建立章節資料
+const chapters = [];
+for (let i = 0; i < matches.length; i++) {
+  const match = matches[i];
+  const nextMatch = matches[i + 1];
+  
+  const chapterNum = parseInt(match[1]);
+  const startIdx = match.index + match[0].length;
+  const endIdx = nextMatch ? nextMatch.index : rawText.length;
+  
+  const content = rawText.substring(startIdx, endIdx).trim();
+  const description = content.substring(0, 80).replace(/[\n\r]+/g, ' ').trim() + '...';
+  
+  chapters.push({
+    num: chapterNum,
+    numStr: String(chapterNum).padStart(2, '0'),
+    content,
+    description
+  });
+}
+
+// 生成日期 (今天，每章間隔1分鐘)
+const baseDate = new Date();
+const formatDate = (d) => {
+  const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  return `${months[d.getMonth()]} ${String(d.getDate()).padStart(2, '0')} ${d.getFullYear()} ${String(d.getHours()).padStart(2, '0')}:${String(d.getMinutes()).padStart(2, '0')}`;
+};
+
+// 輸出目錄
+const blogDir = 'src/content/blog';
+
+// 生成目錄頁
+const indexContent = `---
+title: '${novelName}-目錄'
+description: '${novelName} 全章節目錄'
+pubDate: '${formatDate(baseDate)}'
+category: '${category}'
+tags: [${tags.map(t => `'${t}'`).join(', ')}]
+---
+
+# ${novelName}
+
+## 📚 章節目錄
+
+${chapters.map(ch => `${ch.num}. [第${ch.numStr}章](/blog/${safeNovelName}-第${ch.numStr}章/)`).join('\n')}
+`;
+
+const indexPath = path.join(blogDir, `${safeNovelName}-目錄.md`);
+fs.writeFileSync(indexPath, indexContent, 'utf8');
+console.log(`✅ 目錄: ${indexPath}`);
+
+// 生成各章節
+for (let i = 0; i < chapters.length; i++) {
+  const ch = chapters[i];
+  const chapterDate = new Date(baseDate.getTime() + (i + 1) * 60000); // 每章+1分鐘
+  
+  const prevChapter = i > 0 ? chapters[i - 1] : null;
+  const nextChapter = i < chapters.length - 1 ? chapters[i + 1] : null;
+  
+  // 導航區塊
+  let navSection = `\n---\n\n<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; padding: 1rem; background: #f5f5f5; border-radius: 8px;">\n`;
+  
+  if (prevChapter) {
+    navSection += `  <a href="/blog/${safeNovelName}-第${prevChapter.numStr}章/" style="text-decoration: none;">⬅️ 上一章</a>\n`;
+  } else {
+    navSection += `  <span style="opacity: 0.5;">⬅️ 已是第一章</span>\n`;
+  }
+  
+  navSection += `  <a href="/blog/${safeNovelName}-目錄/" style="text-decoration: none;">📖 目錄</a>\n`;
+  
+  if (nextChapter) {
+    navSection += `  <a href="/blog/${safeNovelName}-第${nextChapter.numStr}章/" style="text-decoration: none;">下一章 ➡️</a>\n`;
+  } else {
+    navSection += `  <span style="opacity: 0.5;">已是最新章節 ➡️</span>\n`;
+  }
+  
+  navSection += `</div>`;
+  
+  const chapterContent = `---
+title: '${novelName}-第${ch.numStr}章'
+description: '${ch.description}'
+pubDate: '${formatDate(chapterDate)}'
+category: '${category}'
+tags: [${tags.map(t => `'${t}'`).join(', ')}]
+---
+
+${ch.content}
+${navSection}
+`;
+  
+  const chapterPath = path.join(blogDir, `${safeNovelName}-第${ch.numStr}章.md`);
+  fs.writeFileSync(chapterPath, chapterContent, 'utf8');
+  console.log(`✅ 第${ch.numStr}章: ${chapterPath}`);
+}
+
+console.log(`\n🎉 完成！共生成 ${chapters.length + 1} 個檔案（含目錄）`);

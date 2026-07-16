@@ -22,3 +22,7 @@ pnpm-debug.log*
 
 # jetbrains setting folder
 .idea/
+
+# 小說原稿 Word 檔案
+小說原稿/*.docx
+小說原稿/~$*
