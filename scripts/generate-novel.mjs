@@ -125,7 +125,8 @@ for (let i = 0; i < htmlMatches.length; i++) {
     num: chapterNum,
     numStr: String(chapterNum).padStart(2, '0'),
     title: chapterTitle,
-    displayTitle: `第${String(chapterNum).padStart(2, '0')}章-${chapterTitle}`,
+    shortTitle: `第${String(chapterNum).padStart(2, '0')}章-${chapterTitle}`,
+    displayTitle: `${novelName} 第${String(chapterNum).padStart(2, '0')}章-${chapterTitle}`,
     content: content,
     description: description
   });
@@ -158,7 +159,7 @@ ${summary ? `> ${summary.split('\n').join('\n> ')}\n\n` : ''}
 
 ## 📚 章節目錄
 
-${chapters.map(ch => `${ch.num}. [${ch.displayTitle}](/blog/${slug}-ch${ch.numStr}/)`).join('\n')}
+${chapters.map(ch => `${ch.num}. [${ch.shortTitle}](/blog/${slug}-ch${ch.numStr}/)`).join('\n')}
 `;
 
 const indexPath = path.join(blogDir, `${slug}.md`);
