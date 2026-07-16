@@ -13,7 +13,7 @@ import path from 'path';
 const args = process.argv.slice(2);
 if (args.length < 4) {
   console.log('用法: node scripts/generate-novel.mjs <word檔案> <英文網址> <分類> <標籤>');
-  console.log('範例: node scripts/generate-novel.mjs "小說原稿/小說.docx" "straight-line-and-maze" "小說創作" "標籤1,標籤2"');
+  console.log('範例: node scripts/generate-novel.mjs "小說原稿/[相二]直線與迷宮.docx" "straight-line-and-maze" "[相二]直線與迷宮" "相葉雅紀,二宮和也"');
   process.exit(1);
 }
 
@@ -34,8 +34,19 @@ const html = result.value;
 const textResult = await mammoth.extractRawText({ path: wordFile });
 const rawText = textResult.value;
 
-// 分割章節 - 使用 "Chapter XX" 格式
-const chapterRegex = /Chapter\s+(\d+)/gi;
+// 提取 Summary（在第一個 Chapter 之前）
+let summary = '';
+const firstChapterMatch = rawText.match(/Chapter\s+\d+/i);
+if (firstChapterMatch) {
+  const beforeChapter = rawText.substring(0, firstChapterMatch.index).trim();
+  // 移除 "Summary:" 標題
+  summary = beforeChapter.replace(/^Summary:\s*/i, '').trim();
+}
+
+console.log(`\n📝 Summary: ${summary.substring(0, 100)}...`);
+
+// 分割章節 - 使用 "Chapter XX-章節標題" 格式
+const chapterRegex = /Chapter\s+(\d+)\s*[-－]\s*(.+?)(?=\n|$)/gi;
 const matches = [...rawText.matchAll(chapterRegex)];
 
 console.log(`\n📚 找到 ${matches.length} 個章節\n`);
@@ -47,6 +58,7 @@ for (let i = 0; i < matches.length; i++) {
   const nextMatch = matches[i + 1];
   
   const chapterNum = parseInt(match[1]);
+  const chapterTitle = match[2].trim();  // 章節中文名稱
   const startIdx = match.index + match[0].length;
   const endIdx = nextMatch ? nextMatch.index : rawText.length;
   
@@ -56,9 +68,13 @@ for (let i = 0; i < matches.length; i++) {
   chapters.push({
     num: chapterNum,
     numStr: String(chapterNum).padStart(2, '0'),
+    title: chapterTitle,  // 例如: "完美的球體"
+    displayTitle: `第${String(chapterNum).padStart(2, '0')}章-${chapterTitle}`,  // 例如: "第01章-完美的球體"
     content,
     description
   });
+  
+  console.log(`  ${chapterNum}. ${chapterTitle}`);
 }
 
 // 生成日期 (今天，每章間隔1分鐘)
@@ -71,7 +87,7 @@ const formatDate = (d) => {
 // 輸出目錄
 const blogDir = 'src/content/blog';
 
-// 生成目錄頁（使用英文 slug）
+// 生成目錄頁（使用英文 slug）- 包含 Summary
 const indexContent = `---
 title: '${novelName}-目錄'
 description: '${novelName} 全章節目錄'
@@ -82,14 +98,16 @@ tags: [${tags.map(t => `'${t}'`).join(', ')}]
 
 # ${novelName}
 
+${summary ? `> ${summary.split('\n').join('\n> ')}\n\n` : ''}
+
 ## 📚 章節目錄
 
-${chapters.map(ch => `${ch.num}. [第${ch.numStr}章](/blog/${slug}-ch${ch.numStr}/)`).join('\n')}
+${chapters.map(ch => `${ch.num}. [${ch.displayTitle}](/blog/${slug}-ch${ch.numStr}/)`).join('\n')}
 `;
 
 const indexPath = path.join(blogDir, `${slug}.md`);
 fs.writeFileSync(indexPath, indexContent, 'utf8');
-console.log(`✅ 目錄: ${indexPath}`);
+console.log(`\n✅ 目錄: ${indexPath}`);
 
 // 生成各章節
 for (let i = 0; i < chapters.length; i++) {
@@ -118,8 +136,9 @@ for (let i = 0; i < chapters.length; i++) {
   
   navSection += `</div>`;
   
+  // 標題使用 "第XX章-章節名稱" 格式（不含小說名稱前綴）
   const chapterContent = `---
-title: '${novelName}-第${ch.numStr}章'
+title: '${ch.displayTitle}'
 description: '${ch.description}'
 pubDate: '${formatDate(chapterDate)}'
 category: '${category}'
@@ -133,7 +152,7 @@ ${navSection}
   // 使用英文 slug 作為檔名
   const chapterPath = path.join(blogDir, `${slug}-ch${ch.numStr}.md`);
   fs.writeFileSync(chapterPath, chapterContent, 'utf8');
-  console.log(`✅ ch${ch.numStr}: ${chapterPath}`);
+  console.log(`✅ ch${ch.numStr}: ${ch.displayTitle}`);
 }
 
 // 更新記錄檔
