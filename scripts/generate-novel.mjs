@@ -155,9 +155,9 @@ category: '${category}'
 tags: [${tags.map(t => `'${t}'`).join(', ')}]
 ---
 
-# ${novelName}
+## 📖 故事介紹
 
-${summary ? `> ${summary.split('\n').join('\n> ')}\n\n` : ''}
+${summary ? summary : ''}
 
 ## 📚 章節目錄
 
