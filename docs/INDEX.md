@@ -18,6 +18,9 @@
 - **[網站統計說明.md](./網站統計說明.md)** - 訪客統計功能
 - **[日常更新流程.md](./日常更新流程.md)** - 日常維護與更新
 
+### 📚 小說發布
+- **[小說發布流程.md](./小說發布流程.md)** - Word 小說轉網頁發布指南
+
 ### 💬 留言系統
 - **[waline-deployment-guide.md](./waline-deployment-guide.md)** - Waline 留言系統部署指南 (PostgreSQL + Vercel)
 - **[waline-usage-guide.md](./waline-usage-guide.md)** - Waline 日常使用與管理指南
@@ -49,6 +52,9 @@
 
 **遇到錯誤**
 → 看 [疑難排解.md](./疑難排解.md)
+
+**發布小說（Word 轉網頁）**
+→ 看 [小說發布流程.md](./小說發布流程.md)
 
 **忘記指令**
 → 看 [快速參考.md](./快速參考.md)
@@ -91,11 +97,17 @@ pearl-portfolio/
 │       └── 疑難排解.md
 │
 ├── src/                          ← 網站原始碼
+│   ├── assets/                  ← 小說圖片
 │   ├── components/              ← 組件
 │   ├── content/blog/            ← 文章（在這裡寫！）
 │   ├── layouts/                 ← 版型
 │   └── pages/                   ← 頁面
 │
+├── scripts/                     ← 工具腳本
+│   ├── generate-novel.mjs       ← 小說生成腳本
+│   └── extract-images.mjs       ← 圖片提取腳本
+│
+├── 小說原稿/                     ← Word 原稿存放處
 ├── public/                      ← 靜態資源（圖片、遊戲）
 └── package.json                 ← 專案設定
 ```
@@ -128,6 +140,7 @@ git push                 # 推送到 GitHub（自動觸發 Cloudflare 部署）
 
 ## 📝 最近更新
 
+- **2026-07-16** - 新增小說發布功能（Word 自動轉多章節網頁）
 - **2026-03-01** - 新增 Waline 留言系統部署指南（PostgreSQL 版本）
 - **2026-02-24** - 建立完整文檔系統
 
