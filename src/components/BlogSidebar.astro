@@ -63,7 +63,7 @@ const currentId = Astro.url.pathname.split('/').filter(Boolean).pop()?.replace('
     <ul class="category-list">
       {categories.map(category => (
         <li>
-          <details open>
+          <details>
             <summary>
               <span class="category-name">{category}</span>
               <span class="post-count">({postsByCategory[category].length})</span>
