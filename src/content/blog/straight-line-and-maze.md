@@ -2,7 +2,7 @@
 title: '[相二]直線與迷宮-目錄'
 description: '[相二]直線與迷宮 全章節目錄'
 pubDate: 'Jul 16 2026 13:12'
-category: '[相二]直線與迷宮'
+category: '目錄'
 tags: ['相葉雅紀', '二宮和也']
 ---
 

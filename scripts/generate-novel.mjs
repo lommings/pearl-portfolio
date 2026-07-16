@@ -146,12 +146,12 @@ const blogDir = 'src/content/blog';
 // 使用當前日期
 const baseDate = new Date();
 
-// 生成目錄頁
+// 生成目錄頁（分類固定為「目錄」）
 const indexContent = `---
 title: '${novelName}-目錄'
 description: '${novelName} 全章節目錄'
 pubDate: '${formatDate(baseDate)}'
-category: '${category}'
+category: '目錄'
 tags: [${tags.map(t => `'${t}'`).join(', ')}]
 ---
 
