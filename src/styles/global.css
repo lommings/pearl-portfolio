@@ -95,17 +95,17 @@ p {
 	margin-bottom: 2em;
 }
 
-/* 內容區標題階層縮小 */
+/* 內容區標題階層縮小 (頁面標題 1.8rem ≈ 29px > h2 > 內文 20px) */
 .prose h2 {
-	font-size: 1.75em;
+	font-size: 1.35em;
 	margin-top: 2em;
 }
 .prose h3 {
-	font-size: 1.4em;
+	font-size: 1.2em;
 	margin-top: 1.5em;
 }
 .prose h4 {
-	font-size: 1.2em;
+	font-size: 1.1em;
 	margin-top: 1.25em;
 }
 .prose h5 {
