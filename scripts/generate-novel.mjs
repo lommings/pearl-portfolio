@@ -143,24 +143,7 @@ const formatDate = (d) => {
 // 輸出目錄
 const blogDir = 'src/content/blog';
 
-// 讀取現有章節的日期（保留舊章節日期）
-const existingDates = {};
-for (const ch of chapters) {
-  const chapterPath = path.join(blogDir, `${slug}-ch${ch.numStr}.md`);
-  if (fs.existsSync(chapterPath)) {
-    const content = fs.readFileSync(chapterPath, 'utf8');
-    const dateMatch = content.match(/pubDate:\s*['"]([^'"]+)['"]/);
-    if (dateMatch) {
-      existingDates[ch.numStr] = dateMatch[1];
-    }
-  }
-}
-
-const existingCount = Object.keys(existingDates).length;
-const newCount = chapters.length - existingCount;
-console.log(`\n📅 現有章節: ${existingCount}, 新章節: ${newCount}`);
-
-// 新章節使用當前日期
+// 使用當前日期
 const baseDate = new Date();
 
 // 生成目錄頁
@@ -186,20 +169,12 @@ fs.writeFileSync(indexPath, indexContent, 'utf8');
 console.log(`\n✅ 目錄: ${indexPath}`);
 
 // 生成各章節
-let newChapterIndex = 0;
 for (let i = 0; i < chapters.length; i++) {
   const ch = chapters[i];
   
-  // 如果章節已存在，保留原日期；否則用新日期
-  let chapterDateStr;
-  if (existingDates[ch.numStr]) {
-    chapterDateStr = existingDates[ch.numStr];
-  } else {
-    // 新章節用當前時間，每章間隔1分鐘
-    const chapterDate = new Date(baseDate.getTime() + (newChapterIndex + 1) * 60000);
-    chapterDateStr = formatDate(chapterDate);
-    newChapterIndex++;
-  }
+  // 每章間隔1分鐘
+  const chapterDate = new Date(baseDate.getTime() + (i + 1) * 60000);
+  const chapterDateStr = formatDate(chapterDate);
   
   const prevChapter = i > 0 ? chapters[i - 1] : null;
   const nextChapter = i < chapters.length - 1 ? chapters[i + 1] : null;
@@ -224,7 +199,6 @@ for (let i = 0; i < chapters.length; i++) {
   navSection += `</div>`;
   
   // 章節內容（HTML 格式，保留斜體、粗體、圖片）
-  const isNew = !existingDates[ch.numStr];
   const chapterContent = `---
 title: '${ch.displayTitle}'
 description: '${ch.description}'
@@ -243,7 +217,7 @@ ${navSection}
   
   const chapterPath = path.join(blogDir, `${slug}-ch${ch.numStr}.md`);
   fs.writeFileSync(chapterPath, chapterContent, 'utf8');
-  console.log(`${isNew ? '🆕' : '✅'} ch${ch.numStr}: ${ch.displayTitle}`);
+  console.log(`✅ ch${ch.numStr}: ${ch.displayTitle}`);
 }
 
 // 更新記錄檔
