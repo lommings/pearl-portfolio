@@ -1,0 +1,182 @@
+---
+/**
+ * 章節導航組件
+ * 用於小說章節之間的導航（上一章/下一章 + 回到目錄）
+ */
+
+interface Props {
+  prevChapter?: {
+    title: string;
+    url: string;
+  };
+  nextChapter?: {
+    title: string;
+    url: string;
+  };
+  indexPage: {
+    title: string;
+    url: string;
+  };
+}
+
+const { prevChapter, nextChapter, indexPage } = Astro.props;
+---
+
+<nav class="chapter-nav">
+  <div class="chapter-nav-links">
+    {prevChapter ? (
+      <a href={prevChapter.url} class="nav-link prev">
+        <span class="nav-arrow">⬅️</span>
+        <span class="nav-text">
+          <span class="nav-label">上一章</span>
+          <span class="nav-title">{prevChapter.title}</span>
+        </span>
+      </a>
+    ) : (
+      <div class="nav-link disabled">
+        <span class="nav-arrow">⬅️</span>
+        <span class="nav-text">
+          <span class="nav-label">已是第一章</span>
+        </span>
+      </div>
+    )}
+
+    <a href={indexPage.url} class="nav-link index">
+      <span class="nav-icon">📖</span>
+      <span class="nav-label">回到目錄</span>
+    </a>
+
+    {nextChapter ? (
+      <a href={nextChapter.url} class="nav-link next">
+        <span class="nav-text">
+          <span class="nav-label">下一章</span>
+          <span class="nav-title">{nextChapter.title}</span>
+        </span>
+        <span class="nav-arrow">➡️</span>
+      </a>
+    ) : (
+      <div class="nav-link disabled">
+        <span class="nav-text">
+          <span class="nav-label">已是最新章節</span>
+        </span>
+        <span class="nav-arrow">➡️</span>
+      </div>
+    )}
+  </div>
+</nav>
+
+<style>
+  .chapter-nav {
+    margin-top: 3rem;
+    padding-top: 2rem;
+    border-top: 2px solid rgb(var(--gray-light));
+  }
+
+  .chapter-nav-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 1.25rem;
+    background: rgb(var(--gray-light));
+    border-radius: 12px;
+    text-decoration: none;
+    color: rgb(var(--gray-dark));
+    transition: all 0.2s ease;
+    min-width: 0;
+  }
+
+  .nav-link:hover:not(.disabled) {
+    background: rgb(var(--accent));
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(var(--accent), 0.3);
+  }
+
+  .nav-link.disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+
+  .nav-link.prev,
+  .nav-link.next {
+    flex: 1;
+    max-width: 45%;
+  }
+
+  .nav-link.prev {
+    justify-content: flex-start;
+  }
+
+  .nav-link.next {
+    justify-content: flex-end;
+    text-align: right;
+  }
+
+  .nav-link.index {
+    flex-direction: column;
+    padding: 0.75rem 1.5rem;
+  }
+
+  .nav-text {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+  }
+
+  .nav-label {
+    font-size: 0.8rem;
+    opacity: 0.8;
+  }
+
+  .nav-title {
+    font-weight: 600;
+    font-size: 0.95rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  .nav-arrow {
+    font-size: 1.2rem;
+    flex-shrink: 0;
+  }
+
+  .nav-icon {
+    font-size: 1.5rem;
+  }
+
+  /* 響應式設計 */
+  @media (max-width: 640px) {
+    .chapter-nav-links {
+      flex-direction: column;
+    }
+
+    .nav-link.prev,
+    .nav-link.next {
+      max-width: 100%;
+    }
+
+    .nav-link.index {
+      order: -1;
+    }
+  }
+
+  /* 深色模式 */
+  @media (prefers-color-scheme: dark) {
+    .nav-link {
+      background: rgb(40, 40, 40);
+    }
+
+    .nav-link:hover:not(.disabled) {
+      background: rgb(var(--accent));
+    }
+  }
+</style>
