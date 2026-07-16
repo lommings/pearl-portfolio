@@ -80,14 +80,17 @@ const currentId = Astro.url.pathname.split('/').filter(Boolean).pop()?.replace('
             </summary>
             <ul class="post-list">
               {postsByCategory[category]
-                .sort((a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf())
-                .map(post => (
+                .sort((a, b) => a.data.pubDate.valueOf() - b.data.pubDate.valueOf())
+                .map(post => {
+                  // 移除標題中的小說名稱前綴，只顯示章節
+                  const shortTitle = post.data.title.replace(/^\[.*?\]\s*[^\s]+\s*/, '');
+                  return (
                   <li class={post.id === currentId ? 'active' : ''}>
                     <a href={`/blog/${post.id}/`}>
-                      {post.data.title}
+                      {shortTitle || post.data.title}
                     </a>
                   </li>
-                ))}
+                )})}
             </ul>
           </details>
         </li>
