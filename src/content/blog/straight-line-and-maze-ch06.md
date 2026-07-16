@@ -1,7 +1,7 @@
-﻿---
+---
 title: '[相二]直線與迷宮-第06章'
 description: '十月的第三個星期五。傍晚六點半。 二宮下班以後去了車站附近的超市。今天晚飯買個便當就好了。他站在便當區，隨手拿了一盒什麼都行的幕之內便當。 他的手機響了。...'
-pubDate: 'Jul 16 2026 11:13'
+pubDate: 'Jul 16 2026 12:04'
 category: '[相二]直線與迷宮'
 tags: ['二宮和也', '大野智', '相葉雅紀', '相二', '竹馬', 'Arashi', '嵐']
 ---
@@ -1399,7 +1399,7 @@ Apex投資顧問。集團的全資子公司。二宮離開了商社。換了工�
 ---
 
 <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; padding: 1rem; background: #f5f5f5; border-radius: 8px;">
-  <a href="/blog/相二直線與迷宮-第05章/" style="text-decoration: none;">⬅️ 上一章</a>
-  <a href="/blog/相二直線與迷宮-目錄/" style="text-decoration: none;">📖 目錄</a>
-  <a href="/blog/相二直線與迷宮-第07章/" style="text-decoration: none;">下一章 ➡️</a>
+  <a href="/blog/straight-line-and-maze-ch05/" style="text-decoration: none;">⬅️ 上一章</a>
+  <a href="/blog/straight-line-and-maze/" style="text-decoration: none;">📖 目錄</a>
+  <a href="/blog/straight-line-and-maze-ch07/" style="text-decoration: none;">下一章 ➡️</a>
 </div>

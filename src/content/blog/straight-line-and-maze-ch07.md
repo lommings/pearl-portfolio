@@ -1,7 +1,7 @@
-﻿---
+---
 title: '[相二]直線與迷宮-第07章'
 description: '接下來的幾天。櫻井作為特別講師參與了後續的幾場專題。不是每天都在。但出現的頻率比「臨時救場」應有的高了一些。 相葉注意到了一件事。每次櫻井出現的日子，二宮的狀...'
-pubDate: 'Jul 16 2026 11:14'
+pubDate: 'Jul 16 2026 12:05'
 category: '[相二]直線與迷宮'
 tags: ['二宮和也', '大野智', '相葉雅紀', '相二', '竹馬', 'Arashi', '嵐']
 ---
@@ -1459,7 +1459,7 @@ Nino。
 ---
 
 <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; padding: 1rem; background: #f5f5f5; border-radius: 8px;">
-  <a href="/blog/相二直線與迷宮-第06章/" style="text-decoration: none;">⬅️ 上一章</a>
-  <a href="/blog/相二直線與迷宮-目錄/" style="text-decoration: none;">📖 目錄</a>
-  <a href="/blog/相二直線與迷宮-第08章/" style="text-decoration: none;">下一章 ➡️</a>
+  <a href="/blog/straight-line-and-maze-ch06/" style="text-decoration: none;">⬅️ 上一章</a>
+  <a href="/blog/straight-line-and-maze/" style="text-decoration: none;">📖 目錄</a>
+  <a href="/blog/straight-line-and-maze-ch08/" style="text-decoration: none;">下一章 ➡️</a>
 </div>

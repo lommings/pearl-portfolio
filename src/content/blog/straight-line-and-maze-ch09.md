@@ -1,7 +1,7 @@
-﻿---
+---
 title: '[相二]直線與迷宮-第09章'
 description: '從那天開始。相葉每天都去Apex。 有時候只是路過。繞十分鐘走過去。 在前台放一杯咖啡。「麻煩轉交二宮。美式不加糖。」 然後走了。 有時候他會待一會兒。...'
-pubDate: 'Jul 16 2026 11:16'
+pubDate: 'Jul 16 2026 12:07'
 category: '[相二]直線與迷宮'
 tags: ['二宮和也', '大野智', '相葉雅紀', '相二', '竹馬', 'Arashi', '嵐']
 ---
@@ -1593,7 +1593,7 @@ C讓他的胃縮了一下。
 ---
 
 <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; padding: 1rem; background: #f5f5f5; border-radius: 8px;">
-  <a href="/blog/相二直線與迷宮-第08章/" style="text-decoration: none;">⬅️ 上一章</a>
-  <a href="/blog/相二直線與迷宮-目錄/" style="text-decoration: none;">📖 目錄</a>
-  <a href="/blog/相二直線與迷宮-第10章/" style="text-decoration: none;">下一章 ➡️</a>
+  <a href="/blog/straight-line-and-maze-ch08/" style="text-decoration: none;">⬅️ 上一章</a>
+  <a href="/blog/straight-line-and-maze/" style="text-decoration: none;">📖 目錄</a>
+  <a href="/blog/straight-line-and-maze-ch10/" style="text-decoration: none;">下一章 ➡️</a>
 </div>

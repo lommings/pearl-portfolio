@@ -1,6 +1,9 @@
 /**
  * 小說生成腳本
  * 從 Word 檔案生成多篇部落格文章
+ * 
+ * 用法: node scripts/generate-novel.mjs <word檔案> <英文網址> <分類> <標籤>
+ * 範例: node scripts/generate-novel.mjs "小說原稿/小說.docx" "my-novel" "小說創作" "標籤1,標籤2"
  */
 
 import mammoth from 'mammoth';
@@ -8,19 +11,20 @@ import fs from 'fs';
 import path from 'path';
 
 const args = process.argv.slice(2);
-if (args.length < 3) {
-  console.log('用法: node scripts/generate-novel.mjs <word檔案> <分類> <標籤(逗號分隔)>');
+if (args.length < 4) {
+  console.log('用法: node scripts/generate-novel.mjs <word檔案> <英文網址> <分類> <標籤>');
+  console.log('範例: node scripts/generate-novel.mjs "小說原稿/小說.docx" "straight-line-and-maze" "小說創作" "標籤1,標籤2"');
   process.exit(1);
 }
 
-const [wordFile, category, tagsStr] = args;
+const [wordFile, slug, category, tagsStr] = args;
 const tags = tagsStr.split(/[,，]/).map(t => t.trim());
 
-// 從檔名取得小說名稱
+// 從檔名取得小說名稱（中文，用於顯示）
 const novelName = path.basename(wordFile, path.extname(wordFile));
-const safeNovelName = novelName.replace(/[\[\]]/g, '');
 
 console.log(`📖 小說: ${novelName}`);
+console.log(`🔗 網址: ${slug}`);
 console.log(`📂 分類: ${category}`);
 console.log(`🏷️ 標籤: ${tags.join(', ')}`);
 
@@ -67,7 +71,7 @@ const formatDate = (d) => {
 // 輸出目錄
 const blogDir = 'src/content/blog';
 
-// 生成目錄頁
+// 生成目錄頁（使用英文 slug）
 const indexContent = `---
 title: '${novelName}-目錄'
 description: '${novelName} 全章節目錄'
@@ -80,34 +84,34 @@ tags: [${tags.map(t => `'${t}'`).join(', ')}]
 
 ## 📚 章節目錄
 
-${chapters.map(ch => `${ch.num}. [第${ch.numStr}章](/blog/${safeNovelName}-第${ch.numStr}章/)`).join('\n')}
+${chapters.map(ch => `${ch.num}. [第${ch.numStr}章](/blog/${slug}-ch${ch.numStr}/)`).join('\n')}
 `;
 
-const indexPath = path.join(blogDir, `${safeNovelName}-目錄.md`);
+const indexPath = path.join(blogDir, `${slug}.md`);
 fs.writeFileSync(indexPath, indexContent, 'utf8');
 console.log(`✅ 目錄: ${indexPath}`);
 
 // 生成各章節
 for (let i = 0; i < chapters.length; i++) {
   const ch = chapters[i];
-  const chapterDate = new Date(baseDate.getTime() + (i + 1) * 60000); // 每章+1分鐘
+  const chapterDate = new Date(baseDate.getTime() + (i + 1) * 60000);
   
   const prevChapter = i > 0 ? chapters[i - 1] : null;
   const nextChapter = i < chapters.length - 1 ? chapters[i + 1] : null;
   
-  // 導航區塊
+  // 導航區塊（使用英文 slug）
   let navSection = `\n---\n\n<div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; padding: 1rem; background: #f5f5f5; border-radius: 8px;">\n`;
   
   if (prevChapter) {
-    navSection += `  <a href="/blog/${safeNovelName}-第${prevChapter.numStr}章/" style="text-decoration: none;">⬅️ 上一章</a>\n`;
+    navSection += `  <a href="/blog/${slug}-ch${prevChapter.numStr}/" style="text-decoration: none;">⬅️ 上一章</a>\n`;
   } else {
     navSection += `  <span style="opacity: 0.5;">⬅️ 已是第一章</span>\n`;
   }
   
-  navSection += `  <a href="/blog/${safeNovelName}-目錄/" style="text-decoration: none;">📖 目錄</a>\n`;
+  navSection += `  <a href="/blog/${slug}/" style="text-decoration: none;">📖 目錄</a>\n`;
   
   if (nextChapter) {
-    navSection += `  <a href="/blog/${safeNovelName}-第${nextChapter.numStr}章/" style="text-decoration: none;">下一章 ➡️</a>\n`;
+    navSection += `  <a href="/blog/${slug}-ch${nextChapter.numStr}/" style="text-decoration: none;">下一章 ➡️</a>\n`;
   } else {
     navSection += `  <span style="opacity: 0.5;">已是最新章節 ➡️</span>\n`;
   }
@@ -126,9 +130,38 @@ ${ch.content}
 ${navSection}
 `;
   
-  const chapterPath = path.join(blogDir, `${safeNovelName}-第${ch.numStr}章.md`);
+  // 使用英文 slug 作為檔名
+  const chapterPath = path.join(blogDir, `${slug}-ch${ch.numStr}.md`);
   fs.writeFileSync(chapterPath, chapterContent, 'utf8');
-  console.log(`✅ 第${ch.numStr}章: ${chapterPath}`);
+  console.log(`✅ ch${ch.numStr}: ${chapterPath}`);
 }
 
+// 更新記錄檔
+const recordPath = '小說原稿/novels-record.json';
+let record = {};
+if (fs.existsSync(recordPath)) {
+  record = JSON.parse(fs.readFileSync(recordPath, 'utf8'));
+}
+
+const today = new Date().toISOString().split('T')[0];
+if (record[novelName]) {
+  record[novelName].lastUpdated = today;
+  record[novelName].chapters = chapters.length;
+} else {
+  record[novelName] = {
+    slug,
+    category,
+    tags,
+    chapters: chapters.length,
+    firstPublished: today,
+    lastUpdated: today
+  };
+}
+
+fs.writeFileSync(recordPath, JSON.stringify(record, null, 2), 'utf8');
+console.log(`\n📝 已更新記錄: ${recordPath}`);
+
 console.log(`\n🎉 完成！共生成 ${chapters.length + 1} 個檔案（含目錄）`);
+console.log(`\n🔗 網址：`);
+console.log(`   目錄: /blog/${slug}/`);
+console.log(`   章節: /blog/${slug}-ch01/ ~ /blog/${slug}-ch${String(chapters.length).padStart(2, '0')}/`);

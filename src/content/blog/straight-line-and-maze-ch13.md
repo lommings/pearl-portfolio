@@ -1,7 +1,7 @@
-﻿---
+---
 title: '[相二]直線與迷宮-第13章'
 description: '星期六。星期天。加班。 星期六，他八點就到了辦公室。比平時上班還早。 沒有人。只有他。九月的週末早晨。辦公室裡空調沒開。有一點悶。他把窗戶打開了一扇。風進來...'
-pubDate: 'Jul 16 2026 11:20'
+pubDate: 'Jul 16 2026 12:11'
 category: '[相二]直線與迷宮'
 tags: ['二宮和也', '大野智', '相葉雅紀', '相二', '竹馬', 'Arashi', '嵐']
 ---
@@ -2301,7 +2301,7 @@ T恤。短褲。遮住了所有的痕跡。
 ---
 
 <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; padding: 1rem; background: #f5f5f5; border-radius: 8px;">
-  <a href="/blog/相二直線與迷宮-第12章/" style="text-decoration: none;">⬅️ 上一章</a>
-  <a href="/blog/相二直線與迷宮-目錄/" style="text-decoration: none;">📖 目錄</a>
+  <a href="/blog/straight-line-and-maze-ch12/" style="text-decoration: none;">⬅️ 上一章</a>
+  <a href="/blog/straight-line-and-maze/" style="text-decoration: none;">📖 目錄</a>
   <span style="opacity: 0.5;">已是最新章節 ➡️</span>
 </div>

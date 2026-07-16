@@ -1,7 +1,7 @@
-﻿---
+---
 title: '[相二]直線與迷宮-第08章'
 description: '酒吧在品川站附近。不是上次櫻井和二宮去的那家。是另一家。稍微大一些。有吧台也有桌子。 他們坐在角落的一張桌子上。三個人。 相葉坐在一邊。二宮坐在他的對面。櫻...'
-pubDate: 'Jul 16 2026 11:15'
+pubDate: 'Jul 16 2026 12:06'
 category: '[相二]直線與迷宮'
 tags: ['二宮和也', '大野智', '相葉雅紀', '相二', '竹馬', 'Arashi', '嵐']
 ---
@@ -1381,7 +1381,7 @@ Nguyen家的長女，一個三十歲左右的女人，巴黎讀的MBA，英語�
 ---
 
 <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; padding: 1rem; background: #f5f5f5; border-radius: 8px;">
-  <a href="/blog/相二直線與迷宮-第07章/" style="text-decoration: none;">⬅️ 上一章</a>
-  <a href="/blog/相二直線與迷宮-目錄/" style="text-decoration: none;">📖 目錄</a>
-  <a href="/blog/相二直線與迷宮-第09章/" style="text-decoration: none;">下一章 ➡️</a>
+  <a href="/blog/straight-line-and-maze-ch07/" style="text-decoration: none;">⬅️ 上一章</a>
+  <a href="/blog/straight-line-and-maze/" style="text-decoration: none;">📖 目錄</a>
+  <a href="/blog/straight-line-and-maze-ch09/" style="text-decoration: none;">下一章 ➡️</a>
 </div>

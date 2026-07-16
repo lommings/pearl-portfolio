@@ -1,7 +1,7 @@
-﻿---
+---
 title: '[相二]直線與迷宮-第02章'
 description: '日子就這樣過了。 一週。兩週。一個月。 二宮每天早上到辦公室，打開電腦。斜對面的相葉已經到了，他每天都比二宮早十分鐘，因為他的車避開了早高峰。桌上放著一杯咖...'
-pubDate: 'Jul 16 2026 11:09'
+pubDate: 'Jul 16 2026 12:00'
 category: '[相二]直線與迷宮'
 tags: ['二宮和也', '大野智', '相葉雅紀', '相二', '竹馬', 'Arashi', '嵐']
 ---
@@ -1427,7 +1427,7 @@ tags: ['二宮和也', '大野智', '相葉雅紀', '相二', '竹馬', 'Arashi'
 ---
 
 <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; padding: 1rem; background: #f5f5f5; border-radius: 8px;">
-  <a href="/blog/相二直線與迷宮-第01章/" style="text-decoration: none;">⬅️ 上一章</a>
-  <a href="/blog/相二直線與迷宮-目錄/" style="text-decoration: none;">📖 目錄</a>
-  <a href="/blog/相二直線與迷宮-第03章/" style="text-decoration: none;">下一章 ➡️</a>
+  <a href="/blog/straight-line-and-maze-ch01/" style="text-decoration: none;">⬅️ 上一章</a>
+  <a href="/blog/straight-line-and-maze/" style="text-decoration: none;">📖 目錄</a>
+  <a href="/blog/straight-line-and-maze-ch03/" style="text-decoration: none;">下一章 ➡️</a>
 </div>

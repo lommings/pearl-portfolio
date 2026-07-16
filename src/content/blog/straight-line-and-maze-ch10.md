@@ -1,7 +1,7 @@
-﻿---
+---
 title: '[相二]直線與迷宮-第10章'
 description: '下午的新幹線。輕井澤回東京。一個半小時。 他坐在靠窗的位子。相葉坐在旁邊。車窗外的風景從山和樹變成了房子和電線。從輕井澤的空曠變成了東京近郊的密集。 列車進...'
-pubDate: 'Jul 16 2026 11:17'
+pubDate: 'Jul 16 2026 12:08'
 category: '[相二]直線與迷宮'
 tags: ['二宮和也', '大野智', '相葉雅紀', '相二', '竹馬', 'Arashi', '嵐']
 ---
@@ -1435,7 +1435,7 @@ Apex投資顧問公司約三十人，跟以前商社一個部門的規模差不�
 ---
 
 <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; padding: 1rem; background: #f5f5f5; border-radius: 8px;">
-  <a href="/blog/相二直線與迷宮-第09章/" style="text-decoration: none;">⬅️ 上一章</a>
-  <a href="/blog/相二直線與迷宮-目錄/" style="text-decoration: none;">📖 目錄</a>
-  <a href="/blog/相二直線與迷宮-第11章/" style="text-decoration: none;">下一章 ➡️</a>
+  <a href="/blog/straight-line-and-maze-ch09/" style="text-decoration: none;">⬅️ 上一章</a>
+  <a href="/blog/straight-line-and-maze/" style="text-decoration: none;">📖 目錄</a>
+  <a href="/blog/straight-line-and-maze-ch11/" style="text-decoration: none;">下一章 ➡️</a>
 </div>

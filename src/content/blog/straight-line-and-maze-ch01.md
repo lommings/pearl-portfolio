@@ -1,12 +1,12 @@
-﻿---
+---
 title: '[相二]直線與迷宮-第01章'
 description: '新小岩的電車每隔三分鐘就會經過。 二宮和也是聽著那個聲音長大的。白天是隆隆的震動，隔著薄薄的牆壁傳進來，讓茶杯在桌面上微微移位。深夜是末班車的尾音，拖著長長的...'
-pubDate: 'Jul 16 2026 11:08'
+pubDate: 'Jul 16 2026 11:59'
 category: '[相二]直線與迷宮'
 tags: ['二宮和也', '大野智', '相葉雅紀', '相二', '竹馬', 'Arashi', '嵐']
 ---
 
-![第01章](../../assets/相二直線與迷宮/image-001.jpeg)
+![Chapter 01](../../assets/相二直線與迷宮/image-001.jpeg)
 
 新小岩的電車每隔三分鐘就會經過。
 
@@ -1264,6 +1264,6 @@ tags: ['二宮和也', '大野智', '相葉雅紀', '相二', '竹馬', 'Arashi'
 
 <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; padding: 1rem; background: #f5f5f5; border-radius: 8px;">
   <span style="opacity: 0.5;">⬅️ 已是第一章</span>
-  <a href="/blog/相二直線與迷宮-目錄/" style="text-decoration: none;">📖 目錄</a>
-  <a href="/blog/相二直線與迷宮-第02章/" style="text-decoration: none;">下一章 ➡️</a>
+  <a href="/blog/straight-line-and-maze/" style="text-decoration: none;">📖 目錄</a>
+  <a href="/blog/straight-line-and-maze-ch02/" style="text-decoration: none;">下一章 ➡️</a>
 </div>

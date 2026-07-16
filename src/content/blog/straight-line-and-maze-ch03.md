@@ -1,7 +1,7 @@
-﻿---
+---
 title: '[相二]直線與迷宮-第03章'
 description: '那股衝動開始出現。 不是表白的衝動。比那更基本。更原始。 是被看見的衝動。 二宮想讓相葉知道他是什麼人。不是那個精密的、圓融的、喝美式不加糖的企劃統籌。是...'
-pubDate: 'Jul 16 2026 11:10'
+pubDate: 'Jul 16 2026 12:01'
 category: '[相二]直線與迷宮'
 tags: ['二宮和也', '大野智', '相葉雅紀', '相二', '竹馬', 'Arashi', '嵐']
 ---
@@ -1535,7 +1535,7 @@ Excel的格子一個一個被填滿。數字，日期，進度百分比。一切
 ---
 
 <div style="display: flex; justify-content: space-between; align-items: center; margin-top: 2rem; padding: 1rem; background: #f5f5f5; border-radius: 8px;">
-  <a href="/blog/相二直線與迷宮-第02章/" style="text-decoration: none;">⬅️ 上一章</a>
-  <a href="/blog/相二直線與迷宮-目錄/" style="text-decoration: none;">📖 目錄</a>
-  <a href="/blog/相二直線與迷宮-第04章/" style="text-decoration: none;">下一章 ➡️</a>
+  <a href="/blog/straight-line-and-maze-ch02/" style="text-decoration: none;">⬅️ 上一章</a>
+  <a href="/blog/straight-line-and-maze/" style="text-decoration: none;">📖 目錄</a>
+  <a href="/blog/straight-line-and-maze-ch04/" style="text-decoration: none;">下一章 ➡️</a>
 </div>
