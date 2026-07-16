@@ -68,6 +68,8 @@ const { title, description, pubDate, updatedDate, heroImage, category, tags } = 
 			
 			.title h1 {
 				margin: 0 0 0.5em 0;
+				font-size: 1.8rem;
+				line-height: 1.4;
 			}
 			
 			.date {
@@ -187,7 +189,7 @@ const { title, description, pubDate, updatedDate, heroImage, category, tags } = 
 										)
 									}
 								</div>
-								<h1>{title}</h1>
+								<h1 set:html={title.replace(/(\s*第\d+章)-/, '<br>$1<br>')} />
 								
 								<!-- 分類和標籤 -->
 								<div class="meta-info">
