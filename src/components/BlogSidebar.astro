@@ -13,8 +13,12 @@ const postsByCategory = allPosts.reduce((acc, post) => {
   return acc;
 }, {} as Record<string, typeof allPosts>);
 
-// 排序分類名稱
-const categories = Object.keys(postsByCategory).sort();
+// 排序分類名稱（目錄永遠在最上面）
+const categories = Object.keys(postsByCategory).sort((a, b) => {
+  if (a === '目錄') return -1;
+  if (b === '目錄') return 1;
+  return a.localeCompare(b);
+});
 
 // 取得所有標籤並計數
 const tagCounts = allPosts.reduce((acc, post) => {
@@ -53,21 +57,7 @@ const currentId = Astro.url.pathname.split('/').filter(Boolean).pop()?.replace('
     </ul>
   </div>
 
-  <!-- 熱門標籤 -->
-  {sortedTags.length > 0 && (
-    <div class="sidebar-section">
-      <h3>🏷️ 熱門標籤</h3>
-      <div class="tag-cloud">
-        {sortedTags.map(([tag, count]) => (
-          <a href={`/tags/${tag}/`} class="tag">
-            {tag} <span class="tag-count">{count}</span>
-          </a>
-        ))}
-      </div>
-    </div>
-  )}
-
-  <!-- 分類導航 -->
+  <!-- 小說創作 -->
   <nav class="sidebar-section">
     <h3>📖 小說創作</h3>
     <ul class="category-list">
@@ -97,6 +87,20 @@ const currentId = Astro.url.pathname.split('/').filter(Boolean).pop()?.replace('
       ))}
     </ul>
   </nav>
+
+  <!-- 熱門標籤 -->
+  {sortedTags.length > 0 && (
+    <div class="sidebar-section">
+      <h3>🏷️ 熱門標籤</h3>
+      <div class="tag-cloud">
+        {sortedTags.map(([tag, count]) => (
+          <a href={`/tags/${tag}/`} class="tag">
+            {tag} <span class="tag-count">{count}</span>
+          </a>
+        ))}
+      </div>
+    </div>
+  )}
 </aside>
 
 <style>
