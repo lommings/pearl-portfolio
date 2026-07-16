@@ -94,6 +94,24 @@ p {
 .prose p {
 	margin-bottom: 2em;
 }
+
+/* 內容區標題階層縮小 */
+.prose h2 {
+	font-size: 1.75em;
+	margin-top: 2em;
+}
+.prose h3 {
+	font-size: 1.4em;
+	margin-top: 1.5em;
+}
+.prose h4 {
+	font-size: 1.2em;
+	margin-top: 1.25em;
+}
+.prose h5 {
+	font-size: 1.05em;
+	margin-top: 1em;
+}
 textarea {
 	width: 100%;
 	font-size: 16px;
